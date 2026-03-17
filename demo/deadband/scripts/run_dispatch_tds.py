@@ -577,8 +577,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--results-dir", type=Path, default=RESULTS)
     parser.add_argument("--duration-seconds", type=int, default=900)
     parser.add_argument("--agc-interval", type=int, default=4)
-    parser.add_argument("--kp", type=float, default=0.05)
-    parser.add_argument("--ki", type=float, default=0.0625)
+    parser.add_argument("--kp", type=float, default=0.03)
+    parser.add_argument("--ki", type=float, default=0.01)
     parser.add_argument("--init-mode", choices=("dispatch", "first"),
                         default="first",
                         help="TDS initialization profile: dispatch average or a curve sample.")

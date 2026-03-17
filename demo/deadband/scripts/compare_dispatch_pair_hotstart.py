@@ -33,6 +33,7 @@ if str(Path(__file__).resolve().parent) not in sys.path:
 import run_dispatch_tds as rdt
 import andes
 from andes.utils.snapshot import load_ss, save_ss
+import hotstart_checkpoint as hcp
 
 
 def dispatch_offset(dispatch_record: rdt.DispatchRecord, dispatch_interval: int) -> int:
@@ -142,21 +143,84 @@ def apply_second_dispatch_targets(
     dispatch_record: rdt.DispatchRecord,
     apply_governor_targets: bool,
     apply_dg_targets: bool,
-) -> None:
+    duration_seconds: int | None = None,
+    schedule_mode: str = "boundary_ramp",
+    next_dispatch_record: rdt.DispatchRecord | None = None,
+) -> dict[str, object]:
     stg_idx = sa.StaticGen.get_all_idxes()
     pg_map = dict(zip(stg_idx, dispatch_record.pg))
+    transition: dict[str, object] = {"ramp_seconds": 0}
 
     gov_rows = link.dropna(subset=["gov_idx"])
     if apply_governor_targets and not gov_rows.empty:
         gov_idx = gov_rows["gov_idx"].tolist()
         pref_values = np.array([pg_map[int(gen)] for gen in gov_rows["stg_idx"]], dtype=float)
-        sa.TurbineGov.set(src="pref0", idx=gov_idx, attr="v", value=pref_values)
+        transition["gov_idx"] = gov_idx
+        pref_start = sa.TurbineGov.get(src="pref0", attr="v", idx=gov_idx)
+        transition["gov_pref_start"] = pref_start
+        transition["gov_pref_target"] = pref_values
+        transition["governor_target_schedule"] = schedule_mode
 
-    dg_rows = link.dropna(subset=["dg_idx"])
-    if apply_dg_targets and not dg_rows.empty:
-        dg_idx = dg_rows["dg_idx"].tolist()
-        pref_values = np.array([pg_map[int(gen)] for gen in dg_rows["stg_idx"]], dtype=float)
-        sa.DG.set(src="pref0", idx=dg_idx, attr="v", value=pref_values)
+        if schedule_mode == "midpoint_trajectory":
+            if duration_seconds is None:
+                raise ValueError("duration_seconds is required for midpoint_trajectory")
+
+            if next_dispatch_record is None:
+                pref_end = pref_values.copy()
+            else:
+                next_pg_map = dict(zip(stg_idx, next_dispatch_record.pg))
+                next_values = np.array([next_pg_map[int(gen)] for gen in gov_rows["stg_idx"]], dtype=float)
+                pref_end = 0.5 * (pref_values + next_values)
+
+            n_steps = int(duration_seconds)
+            mid = max(1, n_steps // 2)
+            last = max(1, n_steps - 1)
+            pref_schedule = np.zeros((n_steps, len(gov_idx)), dtype=float)
+
+            for step in range(n_steps):
+                if step <= mid:
+                    alpha = step / mid
+                    pref_schedule[step] = pref_start + alpha * (pref_values - pref_start)
+                else:
+                    tail = max(1, last - mid)
+                    alpha = (step - mid) / tail
+                    pref_schedule[step] = pref_values + alpha * (pref_end - pref_values)
+
+            transition["gov_pref_end"] = pref_end
+            transition["gov_pref_schedule"] = pref_schedule
+
+    # DG covers PVD1/ESD1 in this case. These units follow their curve / AGC path
+    # and are no longer treated as dispatch-target devices at interval boundaries.
+    _ = apply_dg_targets
+
+    return transition
+
+
+def activate_dispatch_target_transition(
+    sa: andes.system.System,
+    transition: dict[str, object] | None,
+    step: int,
+) -> None:
+    if not transition:
+        return
+
+    ramp_seconds = int(transition.get("ramp_seconds", 0))
+    if ramp_seconds <= 0:
+        alpha = 1.0
+    else:
+        alpha = min(float(step) / float(ramp_seconds), 1.0)
+
+    gov_idx = transition.get("gov_idx")
+    gov_start = transition.get("gov_pref_start")
+    gov_target = transition.get("gov_pref_target")
+    gov_schedule = transition.get("gov_pref_schedule")
+    if gov_idx is not None and gov_schedule is not None:
+        schedule = np.asarray(gov_schedule, dtype=float)
+        row = schedule[min(int(step), schedule.shape[0] - 1)]
+        sa.TurbineGov.set(src="pref0", idx=gov_idx, attr="v", value=row)
+    elif gov_idx is not None and gov_start is not None and gov_target is not None:
+        gov_value = np.asarray(gov_start) + alpha * (np.asarray(gov_target) - np.asarray(gov_start))
+        sa.TurbineGov.set(src="pref0", idx=gov_idx, attr="v", value=gov_value)
 
 
 def run_segment(
@@ -172,6 +236,7 @@ def run_segment(
     ace_raw: float = 0.0,
     local_start: float = 0.0,
     include_initial: bool = True,
+    dispatch_target_transition: dict[str, object] | None = None,
 ) -> tuple[np.ndarray, np.ndarray, float, float]:
     curve: pd.DataFrame = ctx["curve"]  # type: ignore[assignment]
     link: pd.DataFrame = ctx["link"]  # type: ignore[assignment]
@@ -192,6 +257,8 @@ def run_segment(
 
     current_tf = float(sa.dae.t)
     for step in range(1, duration_seconds):
+        activate_dispatch_target_transition(sa, dispatch_target_transition, step)
+
         for col, has_col in (("agov", "has_gov"), ("adg", "has_dg"), ("arg", "has_rg")):
             link[col] = ace_raw * bf * link[has_col] * link["gammap"]
 
@@ -261,7 +328,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--init-mode", choices=("dispatch", "first"), default="first")
     parser.add_argument("--resume-mode", choices=("memory", "snapshot"), default="memory")
     parser.add_argument("--apply-second-governor-targets", action="store_true")
-    parser.add_argument("--apply-second-dg-targets", action="store_true")
+    parser.add_argument(
+        "--apply-second-dg-targets",
+        action="store_true",
+        help="Deprecated and ignored. DG/PVD1/ESD1 dispatch targets are not applied.",
+    )
+    parser.add_argument("--dispatch-target-ramp-seconds", type=int, default=0)
     parser.add_argument("--dyn-case", type=Path, default=rdt.DEFAULT_DYN_CASE)
     parser.add_argument("--stable-dyn-case", type=Path, default=rdt.DEFAULT_STABLE_DYN_CASE)
     parser.add_argument("--curve-file", type=Path, default=rdt.DEFAULT_CURVE_FILE)
@@ -322,6 +394,7 @@ def main() -> None:
         }
         save_ss(snapshot_path, sa1)
         sa2 = load_ss(snapshot_path)
+        hcp.rehydrate_loaded_snapshot(sa2)
         hot_meta = getattr(sa2, "_deadband_hotstart_meta", {})
         ace_integral_hot = float(hot_meta.get("ace_integral", 0.0))
         ace_raw_hot = float(hot_meta.get("ace_raw", 0.0))
@@ -333,13 +406,16 @@ def main() -> None:
     ctx2 = ctx1.copy()
     ctx2["link"] = rdt.build_andes_link(sa2)
     bf2 = compute_bf(sa2, second)
-    apply_second_dispatch_targets(
+    transition = apply_second_dispatch_targets(
         sa2,
         ctx2["link"],  # type: ignore[arg-type]
         second,
         apply_governor_targets=args.apply_second_governor_targets,
         apply_dg_targets=args.apply_second_dg_targets,
     )
+    transition["ramp_seconds"] = int(args.dispatch_target_ramp_seconds)
+    if int(args.dispatch_target_ramp_seconds) <= 0:
+        activate_dispatch_target_transition(sa2, transition, step=0)
 
     t2_hot, f2_hot, _, _ = run_segment(
         sa=sa2,
@@ -354,6 +430,7 @@ def main() -> None:
         ace_raw=ace_raw_hot,
         local_start=float(args.dispatch_interval),
         include_initial=True,
+        dispatch_target_transition=transition,
     )
 
     hot_df = pd.DataFrame({"time_s": np.concatenate([t1, t2_hot]), "freq_dev_hz": np.concatenate([f1, f2_hot])})
