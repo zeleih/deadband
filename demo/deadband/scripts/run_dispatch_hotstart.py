@@ -99,7 +99,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--allow-signature-mismatch", action="store_true",
                         help="Do not fail when the checkpoint signature differs from the current settings.")
     parser.add_argument("--no-save-checkpoint", dest="save_checkpoint", action="store_false")
-    parser.set_defaults(apply_governor_targets=False, apply_dg_targets=False, save_checkpoint=True)
+    parser.add_argument("--save-plot", dest="save_plot", action="store_true")
+    parser.add_argument("--no-save-plot", dest="save_plot", action="store_false")
+    parser.set_defaults(
+        apply_governor_targets=False,
+        apply_dg_targets=False,
+        save_checkpoint=True,
+        save_plot=True,
+    )
     return parser.parse_args()
 
 
@@ -238,7 +245,14 @@ def main() -> None:
     )
 
     dispatch_json_path = rdt.write_dispatch_json(dispatch_record, args.results_dir, label=label)
-    csv_path, png_path = rdt.save_outputs(t, f_dev_hz, dispatch_record, args.results_dir, label=label)
+    csv_path, png_path = rdt.save_outputs(
+        t,
+        f_dev_hz,
+        dispatch_record,
+        args.results_dir,
+        label=label,
+        save_plot=args.save_plot,
+    )
 
     summary = {
         "label": label,

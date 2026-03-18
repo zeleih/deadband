@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 import pandas as pd
@@ -73,7 +74,9 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--start-checkpoint", type=Path, default=None,
                         help="Optional checkpoint to use for the first dispatch in the requested sequence.")
-    parser.set_defaults(apply_governor_targets=False, apply_dg_targets=False)
+    parser.add_argument("--save-plot", dest="save_plot", action="store_true")
+    parser.add_argument("--no-save-plot", dest="save_plot", action="store_false")
+    parser.set_defaults(apply_governor_targets=False, apply_dg_targets=False, save_plot=True)
     return parser.parse_args()
 
 
@@ -96,9 +99,11 @@ def main() -> None:
     tasks = enumerate_dispatches(args.hour_start, args.hours, args.dispatches_per_hour)
     previous_checkpoint = args.start_checkpoint
     rows: list[dict[str, object]] = []
+    total_tasks = len(tasks)
 
     for pos, (hour, dispatch) in enumerate(tasks):
         label = f"h{hour}d{dispatch}"
+        print(f"[{pos + 1}/{total_tasks}] starting {label}", flush=True)
         dispatch_json = args.dispatch_dir / f"{label}_dispatch.json"
         if not dispatch_json.exists():
             raise RuntimeError(
@@ -144,6 +149,11 @@ def main() -> None:
             cmd.append("--apply-governor-targets")
         else:
             cmd.append("--no-apply-governor-targets")
+        if args.save_plot:
+            cmd.append("--save-plot")
+        else:
+            cmd.append("--no-save-plot")
+        step_start = time.perf_counter()
         completed = subprocess.run(
             cmd,
             capture_output=True,
@@ -155,9 +165,16 @@ def main() -> None:
                 f"stdout:\n{completed.stdout}\n"
                 f"stderr:\n{completed.stderr}"
             )
+        elapsed_s = time.perf_counter() - step_start
         summary_csv = args.results_dir / f"{label}_summary.csv"
         row = pd.read_csv(summary_csv).iloc[0].to_dict()
+        row["elapsed_s"] = float(elapsed_s)
         rows.append(row)
+        print(
+            f"[{pos + 1}/{total_tasks}] finished {label} "
+            f"in {elapsed_s:.1f}s final_hz={row['final_hz']:.6f}",
+            flush=True,
+        )
 
         previous_checkpoint = hcp.checkpoint_dir(args.checkpoints_dir, signature, label)
 

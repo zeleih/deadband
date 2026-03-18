@@ -58,6 +58,12 @@ local source trees.
   - apply boundary dispatch targets only to conventional governors;
   - support `governor_target_schedule=midpoint_trajectory`, which is now the
     recommended boundary treatment.
+- `scripts/scale_curve_interp.py`
+  - generates stress-test variants of `CurveInterp.csv` by scaling load, wind,
+    and PV columns while preserving the original format expected by the demo.
+- `scripts/plot_day_hotstart_results.py`
+  - aggregates a 96-dispatch hot-start sweep into a frequency-distribution plot,
+    grouped curve panels, and a CSV summary of key frequency-quality metrics.
 - `scripts/compare_dispatch_pair_hotstart.py`
   - compares cold-stitched and hot-started boundary behavior;
   - now supports smooth governor-target schedules instead of only a boundary
@@ -226,6 +232,56 @@ This validates the current workflow end-to-end: running dispatches separately
 with disk hot starts and midpoint governor trajectories reproduces the same
 frequency trace as a continuous two-interval replay started from the same
 boundary state.
+
+### 5. Daily hot-start frequency quality under a stronger net-load trajectory
+
+To create a less tranquil study condition for deadband experiments, the replay
+curve was scaled to:
+
+- load `x1.10`
+- wind `x1.15`
+- PV `x1.15`
+
+The generated curve is committed as
+[`cases/CurveInterp_load110_wind115_pv115.csv`](cases/CurveInterp_load110_wind115_pv115.csv).
+
+The corresponding 96-dispatch ACOPF library and hot-start TDS chain are
+committed in:
+
+- [`results/dispatches_day96_curve110_wind115_pv115`](results/dispatches_day96_curve110_wind115_pv115)
+- [`results/day96_hotstart_agc4_kp0p03_ki0p003_first_midpoint_curve110_wind115_pv115`](results/day96_hotstart_agc4_kp0p03_ki0p003_first_midpoint_curve110_wind115_pv115)
+- `results/day96_hotstart_checkpoints_agc4_kp0p03_ki0p003_first_midpoint_curve110_wind115_pv115`
+
+Run settings:
+
+- `agc_interval = 4 s`
+- `kp = 0.03`
+- `ki = 0.003`
+- `init_mode = first`
+- governor targets applied only to conventional units
+- boundary schedule `midpoint_trajectory`
+
+Committed aggregate figures:
+
+![daily distribution](results/day96_hotstart_agc4_kp0p03_ki0p003_first_midpoint_curve110_wind115_pv115/frequency_distribution.png)
+
+![daily all curves](results/day96_hotstart_agc4_kp0p03_ki0p003_first_midpoint_curve110_wind115_pv115/frequency_curves_all_96.png)
+
+Key frequency-quality numbers from
+[`results/day96_hotstart_agc4_kp0p03_ki0p003_first_midpoint_curve110_wind115_pv115/frequency_distribution_stats.csv`](results/day96_hotstart_agc4_kp0p03_ki0p003_first_midpoint_curve110_wind115_pv115/frequency_distribution_stats.csv):
+
+- sample count: `86400`
+- mean frequency deviation: `-3.79e-05 Hz`
+- standard deviation: `0.02478 Hz`
+- `P95(|Δf|) = 0.04125 Hz`
+- `P99(|Δf|) = 0.09388 Hz`
+- `max |Δf| = 0.22827 Hz`
+- share with `|Δf| > 0.036 Hz`: `7.1678%`
+- share with `|Δf| > 0.05 Hz`: `3.2569%`
+
+This operating condition is intentionally rougher than the earlier baseline but
+still remains numerically stable for a full 96-dispatch hot-start chain, making
+it a useful starting point for deadband-sensitivity studies.
 
 ## Scope of this refresh
 

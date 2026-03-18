@@ -17,7 +17,6 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable
 
-import matplotlib.pyplot as plt
 import numpy as np
 import openpyxl
 import pandas as pd
@@ -108,6 +107,35 @@ class DispatchRecord:
     @classmethod
     def from_json(cls, path: Path) -> "DispatchRecord":
         return cls(**json.loads(path.read_text()))
+
+
+def dispatch_pg_map(dispatch_record: DispatchRecord) -> dict[int, float]:
+    """
+    Map static-generator idx to dispatch active power.
+
+    The JSON `gen` ordering comes from AMS ACOPF output and is not guaranteed to
+    match `sa.StaticGen.get_all_idxes()`. Always align through the explicit
+    generator idx list instead of assuming positional equality.
+    """
+    return {
+        int(gen): float(pg)
+        for gen, pg in zip(dispatch_record.gen, dispatch_record.pg)
+    }
+
+
+def dispatch_online_mask(
+    static_gen_idx: Iterable[int],
+    dispatch_record: DispatchRecord,
+    threshold: float = 1e-4,
+) -> np.ndarray:
+    """
+    Return the online/offline mask in ANDES StaticGen order.
+    """
+    pg_map = dispatch_pg_map(dispatch_record)
+    return np.array(
+        [1.0 if float(pg_map.get(int(idx), 0.0)) > threshold else 0.0 for idx in static_gen_idx],
+        dtype=float,
+    )
 
 
 def normalize_prefixes(prefixes: Iterable[str] | None, defaults: tuple[str, ...]) -> tuple[str, ...]:
@@ -408,8 +436,7 @@ def run_tds(
     sa.PV.set(src="v0", idx=sa.PV.idx.v, attr="v", value=v_pv)
     sa.Slack.set(src="a0", idx=sa.Slack.idx.v, attr="v", value=a_slack)
 
-    stg_on_uid = np.where(np.array(dispatch_record.pg) > 1e-4)[0]
-    stg_on = np.array([1 if uid in stg_on_uid else 0 for uid in range(len(stg))])
+    stg_on = dispatch_online_mask(stg, dispatch_record)
     sn = sa.StaticGen.get(src="Sn", attr="v", idx=stg)
     bf = stg_on * sn / (stg_on * sn).sum()
 
@@ -526,6 +553,7 @@ def save_outputs(
     dispatch_record: DispatchRecord,
     out_dir: Path,
     label: str | None = None,
+    save_plot: bool = True,
 ) -> tuple[Path, Path]:
     out_dir.mkdir(parents=True, exist_ok=True)
     stem = f"{label or dispatch_record.label}_frequency"
@@ -535,16 +563,28 @@ def save_outputs(
 
     pd.DataFrame({"time_s": t, "freq_dev_hz": f_dev_hz}).to_csv(csv_path, index=False)
 
-    fig, ax = plt.subplots(figsize=(9, 4.8))
-    ax.plot(t, f_dev_hz, color="#0f5c78", linewidth=1.4)
-    ax.axhline(0.0, color="#777777", linewidth=0.8, linestyle="--")
-    ax.set_title(f"Deadband Demo Frequency Deviation ({label or dispatch_record.label})")
-    ax.set_xlabel("Time [s]")
-    ax.set_ylabel("Frequency deviation [Hz]")
-    ax.grid(True, alpha=0.25)
-    fig.tight_layout()
-    fig.savefig(png_path, dpi=180)
-    plt.close(fig)
+    if save_plot:
+        try:
+            os.environ.setdefault("MPLBACKEND", "Agg")
+            if "MPLCONFIGDIR" not in os.environ:
+                _mplconfig = Path(os.environ.get("TMPDIR", "/tmp")) / "openandes-mpl"
+                _mplconfig.mkdir(parents=True, exist_ok=True)
+                os.environ["MPLCONFIGDIR"] = str(_mplconfig)
+
+            import matplotlib.pyplot as plt
+
+            fig, ax = plt.subplots(figsize=(9, 4.8))
+            ax.plot(t, f_dev_hz, color="#0f5c78", linewidth=1.4)
+            ax.axhline(0.0, color="#777777", linewidth=0.8, linestyle="--")
+            ax.set_title(f"Deadband Demo Frequency Deviation ({label or dispatch_record.label})")
+            ax.set_xlabel("Time [s]")
+            ax.set_ylabel("Frequency deviation [Hz]")
+            ax.grid(True, alpha=0.25)
+            fig.tight_layout()
+            fig.savefig(png_path, dpi=180)
+            plt.close(fig)
+        except Exception as exc:
+            print(f"warning: failed to save plot {png_path}: {exc}", file=sys.stderr)
 
     return csv_path, png_path
 
@@ -586,6 +626,9 @@ def parse_args() -> argparse.Namespace:
                         help="PVD1 idx/name prefix for wind units. Repeatable.")
     parser.add_argument("--solar-prefix", action="append", default=None,
                         help="PVD1 idx/name prefix for solar units. Repeatable.")
+    parser.add_argument("--save-plot", dest="save_plot", action="store_true")
+    parser.add_argument("--no-save-plot", dest="save_plot", action="store_false")
+    parser.set_defaults(save_plot=True)
     return parser.parse_args()
 
 
@@ -630,7 +673,14 @@ def main() -> None:
         init_mode=args.init_mode,
     )
     dispatch_json = write_dispatch_json(dispatch_record, args.results_dir, label=label)
-    csv_path, png_path = save_outputs(t, f_dev_hz, dispatch_record, args.results_dir, label=label)
+    csv_path, png_path = save_outputs(
+        t,
+        f_dev_hz,
+        dispatch_record,
+        args.results_dir,
+        label=label,
+        save_plot=args.save_plot,
+    )
 
     print(f"dispatch_json={dispatch_json}")
     print(f"freq_csv={csv_path}")

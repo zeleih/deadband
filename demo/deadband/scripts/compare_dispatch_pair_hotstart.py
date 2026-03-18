@@ -42,8 +42,7 @@ def dispatch_offset(dispatch_record: rdt.DispatchRecord, dispatch_interval: int)
 
 def compute_bf(sa: andes.system.System, dispatch_record: rdt.DispatchRecord) -> np.ndarray:
     stg = sa.StaticGen.get_all_idxes()
-    stg_on_uid = np.where(np.array(dispatch_record.pg) > 1e-4)[0]
-    stg_on = np.array([1 if uid in stg_on_uid else 0 for uid in range(len(stg))], dtype=float)
+    stg_on = rdt.dispatch_online_mask(stg, dispatch_record)
     sn = sa.StaticGen.get(src="Sn", attr="v", idx=stg)
     denom = float((stg_on * sn).sum())
     if denom <= 0.0:
@@ -147,8 +146,7 @@ def apply_second_dispatch_targets(
     schedule_mode: str = "boundary_ramp",
     next_dispatch_record: rdt.DispatchRecord | None = None,
 ) -> dict[str, object]:
-    stg_idx = sa.StaticGen.get_all_idxes()
-    pg_map = dict(zip(stg_idx, dispatch_record.pg))
+    pg_map = rdt.dispatch_pg_map(dispatch_record)
     transition: dict[str, object] = {"ramp_seconds": 0}
 
     gov_rows = link.dropna(subset=["gov_idx"])
@@ -168,7 +166,7 @@ def apply_second_dispatch_targets(
             if next_dispatch_record is None:
                 pref_end = pref_values.copy()
             else:
-                next_pg_map = dict(zip(stg_idx, next_dispatch_record.pg))
+                next_pg_map = rdt.dispatch_pg_map(next_dispatch_record)
                 next_values = np.array([next_pg_map[int(gen)] for gen in gov_rows["stg_idx"]], dtype=float)
                 pref_end = 0.5 * (pref_values + next_values)
 

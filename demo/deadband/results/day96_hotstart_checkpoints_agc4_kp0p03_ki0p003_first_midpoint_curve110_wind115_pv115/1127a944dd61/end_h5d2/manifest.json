@@ -1,0 +1,47 @@
+{
+  "format": "deadband_hotstart_v1",
+  "dispatch_label": "h5d2",
+  "hour": 5,
+  "dispatch": 2,
+  "dispatch_json": "/Applications/openandes/demo/demo/deadband/results/day96_hotstart_agc4_kp0p03_ki0p003_first_midpoint_curve110_wind115_pv115/h5d2_dispatch.json",
+  "checkpoint_dir": "/Applications/openandes/demo/demo/deadband/results/day96_hotstart_checkpoints_agc4_kp0p03_ki0p003_first_midpoint_curve110_wind115_pv115/1127a944dd61/end_h5d2",
+  "checkpoint_in": "/Applications/openandes/demo/demo/deadband/results/day96_hotstart_checkpoints_agc4_kp0p03_ki0p003_first_midpoint_curve110_wind115_pv115/1127a944dd61/end_h5d1",
+  "curve_file": "/Applications/openandes/demo/demo/deadband/cases/CurveInterp_load110_wind115_pv115.csv",
+  "dyn_case": "/Applications/openandes/demo/demo/deadband/cases/IL200_dyn_db2.xlsx",
+  "stable_dyn_case": "/Applications/openandes/demo/demo/deadband/cases/IL200_dyn_db2_stable.xlsx",
+  "wind_prefixes": [
+    "WT_"
+  ],
+  "solar_prefixes": [
+    "PV_"
+  ],
+  "duration_seconds": 900,
+  "agc_interval": 4,
+  "end_dae_t": 20677.0,
+  "param_signature": {
+    "format": "deadband_hotstart_v1",
+    "kp": 0.03,
+    "ki": 0.003,
+    "agc_interval": 4,
+    "init_mode": "first",
+    "dispatch_interval": 900,
+    "curve_file": "/Applications/openandes/demo/demo/deadband/cases/CurveInterp_load110_wind115_pv115.csv",
+    "dyn_case": "/Applications/openandes/demo/demo/deadband/cases/IL200_dyn_db2.xlsx",
+    "stable_dyn_case": "/Applications/openandes/demo/demo/deadband/cases/IL200_dyn_db2_stable.xlsx",
+    "wind_prefixes": [
+      "WT_"
+    ],
+    "solar_prefixes": [
+      "PV_"
+    ],
+    "extra": {
+      "runner": "run_dispatch_hotstart",
+      "apply_governor_targets": true,
+      "dispatch_target_scope": "governor_only",
+      "governor_target_schedule": "midpoint_trajectory",
+      "dispatch_target_ramp_seconds": 0
+    }
+  },
+  "param_signature_path": "/Applications/openandes/demo/demo/deadband/results/day96_hotstart_checkpoints_agc4_kp0p03_ki0p003_first_midpoint_curve110_wind115_pv115/1127a944dd61/param_signature.json",
+  "param_hash": "1127a944dd61"
+}
