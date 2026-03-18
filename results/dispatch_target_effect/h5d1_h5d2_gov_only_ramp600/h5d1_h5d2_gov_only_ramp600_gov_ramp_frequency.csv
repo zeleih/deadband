@@ -1,0 +1,1801 @@
+time_s,freq_dev_hz,variant,variant_label
+0.0,0.0,carryover,"carry-over (bf=first, no target)"
+1.0,-0.0094689540912185,carryover,"carry-over (bf=first, no target)"
+2.0,-0.0099369407010363,carryover,"carry-over (bf=first, no target)"
+3.0,0.0041057049931048,carryover,"carry-over (bf=first, no target)"
+4.0,0.0036796737991151,carryover,"carry-over (bf=first, no target)"
+5.0,0.0008420291528965,carryover,"carry-over (bf=first, no target)"
+6.0,-0.0022476527474157,carryover,"carry-over (bf=first, no target)"
+7.0,0.0064209377394242,carryover,"carry-over (bf=first, no target)"
+8.0,-0.0086715800539338,carryover,"carry-over (bf=first, no target)"
+9.0,-0.0219287216596475,carryover,"carry-over (bf=first, no target)"
+10.0,-0.014252756932982,carryover,"carry-over (bf=first, no target)"
+11.0,0.0112234549598211,carryover,"carry-over (bf=first, no target)"
+12.0,0.0010460496797692,carryover,"carry-over (bf=first, no target)"
+13.0,-0.0020931232631271,carryover,"carry-over (bf=first, no target)"
+14.0,-0.0061794736825748,carryover,"carry-over (bf=first, no target)"
+15.0,-0.0028564001811637,carryover,"carry-over (bf=first, no target)"
+16.0,-0.0155711600851327,carryover,"carry-over (bf=first, no target)"
+17.0,-0.0080974151414259,carryover,"carry-over (bf=first, no target)"
+18.0,0.0054804883631032,carryover,"carry-over (bf=first, no target)"
+19.0,0.0057640450649953,carryover,"carry-over (bf=first, no target)"
+20.0,-0.0087590367419387,carryover,"carry-over (bf=first, no target)"
+21.0,-0.0109492220307694,carryover,"carry-over (bf=first, no target)"
+22.0,0.0028575474166769,carryover,"carry-over (bf=first, no target)"
+23.0,0.0087125886913996,carryover,"carry-over (bf=first, no target)"
+24.0,0.0014290703003227,carryover,"carry-over (bf=first, no target)"
+25.0,-0.0017843568601416,carryover,"carry-over (bf=first, no target)"
+26.0,0.0018797138219017,carryover,"carry-over (bf=first, no target)"
+27.0,-0.0019538168196797,carryover,"carry-over (bf=first, no target)"
+28.0,-0.0078751368279372,carryover,"carry-over (bf=first, no target)"
+29.0,-0.0041696963760373,carryover,"carry-over (bf=first, no target)"
+30.0,-0.0019110920641596,carryover,"carry-over (bf=first, no target)"
+31.0,-0.0083054512845714,carryover,"carry-over (bf=first, no target)"
+32.0,-0.009243385033486,carryover,"carry-over (bf=first, no target)"
+33.0,-0.0077452685218082,carryover,"carry-over (bf=first, no target)"
+34.0,-0.0073680835101774,carryover,"carry-over (bf=first, no target)"
+35.0,-0.0064898268771851,carryover,"carry-over (bf=first, no target)"
+36.0,-0.0116628856972389,carryover,"carry-over (bf=first, no target)"
+37.0,-0.0139868053205827,carryover,"carry-over (bf=first, no target)"
+38.0,-0.015165587569601,carryover,"carry-over (bf=first, no target)"
+39.0,-0.0095540506592906,carryover,"carry-over (bf=first, no target)"
+40.0,-3.43962110793683e-06,carryover,"carry-over (bf=first, no target)"
+41.0,0.0105922241033828,carryover,"carry-over (bf=first, no target)"
+42.0,0.0023558670458578,carryover,"carry-over (bf=first, no target)"
+43.0,0.000916162635729,carryover,"carry-over (bf=first, no target)"
+44.0,-0.0043771832183514,carryover,"carry-over (bf=first, no target)"
+45.0,-0.017536385685386,carryover,"carry-over (bf=first, no target)"
+46.0,0.0038007148590235,carryover,"carry-over (bf=first, no target)"
+47.0,0.0041339972793785,carryover,"carry-over (bf=first, no target)"
+48.0,-0.0005337755606316,carryover,"carry-over (bf=first, no target)"
+49.0,-0.0123651782812261,carryover,"carry-over (bf=first, no target)"
+50.0,-0.0044764594283908,carryover,"carry-over (bf=first, no target)"
+51.0,-0.0024025218241385,carryover,"carry-over (bf=first, no target)"
+52.0,-0.0063525700687128,carryover,"carry-over (bf=first, no target)"
+53.0,-0.0089498942197807,carryover,"carry-over (bf=first, no target)"
+54.0,-0.0055629734686357,carryover,"carry-over (bf=first, no target)"
+55.0,-0.0025831518586483,carryover,"carry-over (bf=first, no target)"
+56.0,-0.0091914986255092,carryover,"carry-over (bf=first, no target)"
+57.0,-0.0032961791694696,carryover,"carry-over (bf=first, no target)"
+58.0,-0.010766713374315,carryover,"carry-over (bf=first, no target)"
+59.0,0.0017649851030565,carryover,"carry-over (bf=first, no target)"
+60.0,0.0002391408106072,carryover,"carry-over (bf=first, no target)"
+61.0,0.0100922947083281,carryover,"carry-over (bf=first, no target)"
+62.0,-0.0018623459846001,carryover,"carry-over (bf=first, no target)"
+63.0,0.0013960920532563,carryover,"carry-over (bf=first, no target)"
+64.0,-0.0118299016455969,carryover,"carry-over (bf=first, no target)"
+65.0,-0.0161855587503834,carryover,"carry-over (bf=first, no target)"
+66.0,-0.0146022381902555,carryover,"carry-over (bf=first, no target)"
+67.0,-0.0075241793444291,carryover,"carry-over (bf=first, no target)"
+68.0,0.0040494060185292,carryover,"carry-over (bf=first, no target)"
+69.0,0.003444410848914,carryover,"carry-over (bf=first, no target)"
+70.0,-0.009649143183199,carryover,"carry-over (bf=first, no target)"
+71.0,-0.0143619562135799,carryover,"carry-over (bf=first, no target)"
+72.0,-0.0056521225311678,carryover,"carry-over (bf=first, no target)"
+73.0,0.0073707186120808,carryover,"carry-over (bf=first, no target)"
+74.0,-0.0121503846471071,carryover,"carry-over (bf=first, no target)"
+75.0,-0.0038883462626704,carryover,"carry-over (bf=first, no target)"
+76.0,-0.0056015570838452,carryover,"carry-over (bf=first, no target)"
+77.0,-0.0173123802473806,carryover,"carry-over (bf=first, no target)"
+78.0,-0.0007103782860284,carryover,"carry-over (bf=first, no target)"
+79.0,-0.0032172203380298,carryover,"carry-over (bf=first, no target)"
+80.0,-0.0030985028663566,carryover,"carry-over (bf=first, no target)"
+81.0,0.0015599528973764,carryover,"carry-over (bf=first, no target)"
+82.0,0.001555029126905,carryover,"carry-over (bf=first, no target)"
+83.0,0.0075061890751015,carryover,"carry-over (bf=first, no target)"
+84.0,-0.0138670469814705,carryover,"carry-over (bf=first, no target)"
+85.0,-0.0016580793892884,carryover,"carry-over (bf=first, no target)"
+86.0,-0.0016575249078409,carryover,"carry-over (bf=first, no target)"
+87.0,-0.0118660886581234,carryover,"carry-over (bf=first, no target)"
+88.0,-0.0116288430723132,carryover,"carry-over (bf=first, no target)"
+89.0,0.0020299862189077,carryover,"carry-over (bf=first, no target)"
+90.0,-0.0114507951742348,carryover,"carry-over (bf=first, no target)"
+91.0,-0.0197153839675023,carryover,"carry-over (bf=first, no target)"
+92.0,-0.0095840639119271,carryover,"carry-over (bf=first, no target)"
+93.0,0.0126969738696436,carryover,"carry-over (bf=first, no target)"
+94.0,0.0106999954955533,carryover,"carry-over (bf=first, no target)"
+95.0,0.0056765291157212,carryover,"carry-over (bf=first, no target)"
+96.0,-0.0044911814029235,carryover,"carry-over (bf=first, no target)"
+97.0,-0.0109561501616517,carryover,"carry-over (bf=first, no target)"
+98.0,-0.0083236044560575,carryover,"carry-over (bf=first, no target)"
+99.0,-0.0046856677687823,carryover,"carry-over (bf=first, no target)"
+100.0,-0.0045427173607914,carryover,"carry-over (bf=first, no target)"
+101.0,0.0002490814429378,carryover,"carry-over (bf=first, no target)"
+102.0,-0.0012424273315025,carryover,"carry-over (bf=first, no target)"
+103.0,-2.1840634008007953e-05,carryover,"carry-over (bf=first, no target)"
+104.0,-0.0216177624962554,carryover,"carry-over (bf=first, no target)"
+105.0,-0.0226331735166018,carryover,"carry-over (bf=first, no target)"
+106.0,-0.0090694511646782,carryover,"carry-over (bf=first, no target)"
+107.0,-0.0049849473712759,carryover,"carry-over (bf=first, no target)"
+108.0,0.0028260170362104,carryover,"carry-over (bf=first, no target)"
+109.0,0.0026838347641078,carryover,"carry-over (bf=first, no target)"
+110.0,0.0067902269012476,carryover,"carry-over (bf=first, no target)"
+111.0,0.0036313194946346,carryover,"carry-over (bf=first, no target)"
+112.0,-0.002306686234974,carryover,"carry-over (bf=first, no target)"
+113.0,0.0028089077880855,carryover,"carry-over (bf=first, no target)"
+114.0,0.0113362462107335,carryover,"carry-over (bf=first, no target)"
+115.0,0.0010332785484967,carryover,"carry-over (bf=first, no target)"
+116.0,-0.0111700889565047,carryover,"carry-over (bf=first, no target)"
+117.0,-0.0050182294255884,carryover,"carry-over (bf=first, no target)"
+118.0,-0.0017939560438162,carryover,"carry-over (bf=first, no target)"
+119.0,-0.0119499355716423,carryover,"carry-over (bf=first, no target)"
+120.0,-0.0002178524185647,carryover,"carry-over (bf=first, no target)"
+121.0,-0.0009865325923308,carryover,"carry-over (bf=first, no target)"
+122.0,-0.0058978503947648,carryover,"carry-over (bf=first, no target)"
+123.0,-0.0090573370925528,carryover,"carry-over (bf=first, no target)"
+124.0,0.0025206524171528,carryover,"carry-over (bf=first, no target)"
+125.0,-0.001036247630457,carryover,"carry-over (bf=first, no target)"
+126.0,-0.0023698212942546,carryover,"carry-over (bf=first, no target)"
+127.0,-0.0112185389225638,carryover,"carry-over (bf=first, no target)"
+128.0,-0.0082857389369372,carryover,"carry-over (bf=first, no target)"
+129.0,-0.010817257749307,carryover,"carry-over (bf=first, no target)"
+130.0,-0.0163324216455018,carryover,"carry-over (bf=first, no target)"
+131.0,-0.0196990056585666,carryover,"carry-over (bf=first, no target)"
+132.0,0.0049997065453455,carryover,"carry-over (bf=first, no target)"
+133.0,0.0240399701711169,carryover,"carry-over (bf=first, no target)"
+134.0,0.0080629642161333,carryover,"carry-over (bf=first, no target)"
+135.0,-0.0070438806044959,carryover,"carry-over (bf=first, no target)"
+136.0,-0.0185001162282283,carryover,"carry-over (bf=first, no target)"
+137.0,-0.0093606369487497,carryover,"carry-over (bf=first, no target)"
+138.0,-0.0065824682880011,carryover,"carry-over (bf=first, no target)"
+139.0,-0.0117604983756991,carryover,"carry-over (bf=first, no target)"
+140.0,-0.0109374000047846,carryover,"carry-over (bf=first, no target)"
+141.0,0.0116535962953845,carryover,"carry-over (bf=first, no target)"
+142.0,0.0118913358993477,carryover,"carry-over (bf=first, no target)"
+143.0,0.0029852054335277,carryover,"carry-over (bf=first, no target)"
+144.0,-0.0073220423271713,carryover,"carry-over (bf=first, no target)"
+145.0,-0.0109470630777264,carryover,"carry-over (bf=first, no target)"
+146.0,-0.0088134959352004,carryover,"carry-over (bf=first, no target)"
+147.0,-0.0101419100560717,carryover,"carry-over (bf=first, no target)"
+148.0,-0.0114507930143292,carryover,"carry-over (bf=first, no target)"
+149.0,0.0002227733607451,carryover,"carry-over (bf=first, no target)"
+150.0,0.0092088882177687,carryover,"carry-over (bf=first, no target)"
+151.0,0.0069728432599491,carryover,"carry-over (bf=first, no target)"
+152.0,-0.004246051633614,carryover,"carry-over (bf=first, no target)"
+153.0,-0.0089047262284869,carryover,"carry-over (bf=first, no target)"
+154.0,-0.0067599563227838,carryover,"carry-over (bf=first, no target)"
+155.0,-0.0191647421557883,carryover,"carry-over (bf=first, no target)"
+156.0,-0.0017371525282516,carryover,"carry-over (bf=first, no target)"
+157.0,0.0029669717671243,carryover,"carry-over (bf=first, no target)"
+158.0,-0.0106459379157808,carryover,"carry-over (bf=first, no target)"
+159.0,-0.0003953659932709,carryover,"carry-over (bf=first, no target)"
+160.0,0.0035992692697472,carryover,"carry-over (bf=first, no target)"
+161.0,0.0093466563237187,carryover,"carry-over (bf=first, no target)"
+162.0,-0.0001038603952308,carryover,"carry-over (bf=first, no target)"
+163.0,0.0033847802902631,carryover,"carry-over (bf=first, no target)"
+164.0,-0.0141878127847094,carryover,"carry-over (bf=first, no target)"
+165.0,-0.009041558014502,carryover,"carry-over (bf=first, no target)"
+166.0,-2.3296824323004728e-05,carryover,"carry-over (bf=first, no target)"
+167.0,-0.0057281737899117,carryover,"carry-over (bf=first, no target)"
+168.0,-0.0005609692598773,carryover,"carry-over (bf=first, no target)"
+169.0,-0.006876781016476,carryover,"carry-over (bf=first, no target)"
+170.0,0.0101875299522591,carryover,"carry-over (bf=first, no target)"
+171.0,0.000226112918229,carryover,"carry-over (bf=first, no target)"
+172.0,-0.0087773312125638,carryover,"carry-over (bf=first, no target)"
+173.0,-0.0022024734251657,carryover,"carry-over (bf=first, no target)"
+174.0,0.0083287008384536,carryover,"carry-over (bf=first, no target)"
+175.0,0.0065549309449286,carryover,"carry-over (bf=first, no target)"
+176.0,-0.0150936371890009,carryover,"carry-over (bf=first, no target)"
+177.0,-0.0145550712320963,carryover,"carry-over (bf=first, no target)"
+178.0,0.0007951831647545,carryover,"carry-over (bf=first, no target)"
+179.0,0.0139546377040522,carryover,"carry-over (bf=first, no target)"
+180.0,0.0073058667602854,carryover,"carry-over (bf=first, no target)"
+181.0,-0.0012659792827252,carryover,"carry-over (bf=first, no target)"
+182.0,-0.0112568897887932,carryover,"carry-over (bf=first, no target)"
+183.0,-0.0049272547851209,carryover,"carry-over (bf=first, no target)"
+184.0,0.0063050280652188,carryover,"carry-over (bf=first, no target)"
+185.0,0.0008470099678836,carryover,"carry-over (bf=first, no target)"
+186.0,0.0022966260751289,carryover,"carry-over (bf=first, no target)"
+187.0,-0.0027168340327388,carryover,"carry-over (bf=first, no target)"
+188.0,0.00712605882204,carryover,"carry-over (bf=first, no target)"
+189.0,0.014378162754256,carryover,"carry-over (bf=first, no target)"
+190.0,0.0079511517006336,carryover,"carry-over (bf=first, no target)"
+191.0,0.0022785377985323,carryover,"carry-over (bf=first, no target)"
+192.0,-0.0120955997636507,carryover,"carry-over (bf=first, no target)"
+193.0,0.0023711319301611,carryover,"carry-over (bf=first, no target)"
+194.0,-0.0156001497156488,carryover,"carry-over (bf=first, no target)"
+195.0,-0.0137953016296576,carryover,"carry-over (bf=first, no target)"
+196.0,-0.0117240816269825,carryover,"carry-over (bf=first, no target)"
+197.0,0.0053846802139956,carryover,"carry-over (bf=first, no target)"
+198.0,-0.000846716011964,carryover,"carry-over (bf=first, no target)"
+199.0,-0.0031149729476354,carryover,"carry-over (bf=first, no target)"
+200.0,-0.010333091182002,carryover,"carry-over (bf=first, no target)"
+201.0,3.899037715360265e-05,carryover,"carry-over (bf=first, no target)"
+202.0,-0.0016296595982079,carryover,"carry-over (bf=first, no target)"
+203.0,-0.0076420850863323,carryover,"carry-over (bf=first, no target)"
+204.0,0.0050796060113489,carryover,"carry-over (bf=first, no target)"
+205.0,0.005120139641308,carryover,"carry-over (bf=first, no target)"
+206.0,0.0108208598132142,carryover,"carry-over (bf=first, no target)"
+207.0,-0.0042122518287524,carryover,"carry-over (bf=first, no target)"
+208.0,-0.0185844125839707,carryover,"carry-over (bf=first, no target)"
+209.0,0.000415052467475,carryover,"carry-over (bf=first, no target)"
+210.0,0.0078974576026524,carryover,"carry-over (bf=first, no target)"
+211.0,0.0023809673201569,carryover,"carry-over (bf=first, no target)"
+212.0,0.001281516500291,carryover,"carry-over (bf=first, no target)"
+213.0,-0.0038212547766636,carryover,"carry-over (bf=first, no target)"
+214.0,0.0001905563843784,carryover,"carry-over (bf=first, no target)"
+215.0,0.0089104105437787,carryover,"carry-over (bf=first, no target)"
+216.0,-0.0036076209548907,carryover,"carry-over (bf=first, no target)"
+217.0,-0.0025007072254745,carryover,"carry-over (bf=first, no target)"
+218.0,0.0013386478499022,carryover,"carry-over (bf=first, no target)"
+219.0,-0.0012949985539512,carryover,"carry-over (bf=first, no target)"
+220.0,-0.0148291408781608,carryover,"carry-over (bf=first, no target)"
+221.0,-0.0060769546937167,carryover,"carry-over (bf=first, no target)"
+222.0,0.0095289641615314,carryover,"carry-over (bf=first, no target)"
+223.0,0.0128139499733004,carryover,"carry-over (bf=first, no target)"
+224.0,0.0007640675174291,carryover,"carry-over (bf=first, no target)"
+225.0,-0.0006034606925364,carryover,"carry-over (bf=first, no target)"
+226.0,0.0022774505917277,carryover,"carry-over (bf=first, no target)"
+227.0,0.0026704889016393,carryover,"carry-over (bf=first, no target)"
+228.0,0.0056530885294225,carryover,"carry-over (bf=first, no target)"
+229.0,-0.0029096996534794,carryover,"carry-over (bf=first, no target)"
+230.0,-0.000840032991467,carryover,"carry-over (bf=first, no target)"
+231.0,0.0099466702719652,carryover,"carry-over (bf=first, no target)"
+232.0,-0.0099185135270496,carryover,"carry-over (bf=first, no target)"
+233.0,0.0059819376042069,carryover,"carry-over (bf=first, no target)"
+234.0,0.008776068647438,carryover,"carry-over (bf=first, no target)"
+235.0,0.0113594927998672,carryover,"carry-over (bf=first, no target)"
+236.0,0.0008436295092106,carryover,"carry-over (bf=first, no target)"
+237.0,-0.0079515073002767,carryover,"carry-over (bf=first, no target)"
+238.0,-0.0089120448915092,carryover,"carry-over (bf=first, no target)"
+239.0,-0.0211788571194992,carryover,"carry-over (bf=first, no target)"
+240.0,-0.0102283964787952,carryover,"carry-over (bf=first, no target)"
+241.0,0.0068543595710623,carryover,"carry-over (bf=first, no target)"
+242.0,0.013343499144014,carryover,"carry-over (bf=first, no target)"
+243.0,-0.0132658339522828,carryover,"carry-over (bf=first, no target)"
+244.0,-0.0099739605543525,carryover,"carry-over (bf=first, no target)"
+245.0,-0.0053560402908892,carryover,"carry-over (bf=first, no target)"
+246.0,0.0030805030687242,carryover,"carry-over (bf=first, no target)"
+247.0,0.0017637824545291,carryover,"carry-over (bf=first, no target)"
+248.0,0.0153979468584442,carryover,"carry-over (bf=first, no target)"
+249.0,0.000719939789251,carryover,"carry-over (bf=first, no target)"
+250.0,-0.0025181074074165,carryover,"carry-over (bf=first, no target)"
+251.0,-0.0035183737145594,carryover,"carry-over (bf=first, no target)"
+252.0,0.002425127125023,carryover,"carry-over (bf=first, no target)"
+253.0,-0.0072082115091132,carryover,"carry-over (bf=first, no target)"
+254.0,-0.004038280280918,carryover,"carry-over (bf=first, no target)"
+255.0,-0.0138599578498954,carryover,"carry-over (bf=first, no target)"
+256.0,0.0078285917219877,carryover,"carry-over (bf=first, no target)"
+257.0,0.0091646835696534,carryover,"carry-over (bf=first, no target)"
+258.0,0.0241073350089449,carryover,"carry-over (bf=first, no target)"
+259.0,0.0119906813224623,carryover,"carry-over (bf=first, no target)"
+260.0,-0.0040197409267594,carryover,"carry-over (bf=first, no target)"
+261.0,-0.0113237581074288,carryover,"carry-over (bf=first, no target)"
+262.0,-0.0060744627555942,carryover,"carry-over (bf=first, no target)"
+263.0,0.0030799551707438,carryover,"carry-over (bf=first, no target)"
+264.0,0.0145788794216894,carryover,"carry-over (bf=first, no target)"
+265.0,-0.0038838082314329,carryover,"carry-over (bf=first, no target)"
+266.0,-0.0038864349075429,carryover,"carry-over (bf=first, no target)"
+267.0,0.0065801544820143,carryover,"carry-over (bf=first, no target)"
+268.0,0.0035514993143026,carryover,"carry-over (bf=first, no target)"
+269.0,-0.005688153278287,carryover,"carry-over (bf=first, no target)"
+270.0,0.0010412210284638,carryover,"carry-over (bf=first, no target)"
+271.0,-0.0007744749005844,carryover,"carry-over (bf=first, no target)"
+272.0,0.0060352049496747,carryover,"carry-over (bf=first, no target)"
+273.0,-0.0039342650215856,carryover,"carry-over (bf=first, no target)"
+274.0,0.0027805312203765,carryover,"carry-over (bf=first, no target)"
+275.0,0.0062684710676963,carryover,"carry-over (bf=first, no target)"
+276.0,-0.0074074485951158,carryover,"carry-over (bf=first, no target)"
+277.0,-0.0091649414195815,carryover,"carry-over (bf=first, no target)"
+278.0,-0.0153556510972241,carryover,"carry-over (bf=first, no target)"
+279.0,-0.0043409095092283,carryover,"carry-over (bf=first, no target)"
+280.0,0.0107210208648655,carryover,"carry-over (bf=first, no target)"
+281.0,0.0167676462844701,carryover,"carry-over (bf=first, no target)"
+282.0,-0.0070049205535571,carryover,"carry-over (bf=first, no target)"
+283.0,-0.0121500844373034,carryover,"carry-over (bf=first, no target)"
+284.0,0.0042349178804812,carryover,"carry-over (bf=first, no target)"
+285.0,-9.153175169807072e-05,carryover,"carry-over (bf=first, no target)"
+286.0,0.0060321909694627,carryover,"carry-over (bf=first, no target)"
+287.0,-0.0085747408694358,carryover,"carry-over (bf=first, no target)"
+288.0,0.000611737704439,carryover,"carry-over (bf=first, no target)"
+289.0,-0.005628551494845,carryover,"carry-over (bf=first, no target)"
+290.0,-0.0052834303396043,carryover,"carry-over (bf=first, no target)"
+291.0,-0.0089319715550417,carryover,"carry-over (bf=first, no target)"
+292.0,0.007694006000114,carryover,"carry-over (bf=first, no target)"
+293.0,0.0083695634038383,carryover,"carry-over (bf=first, no target)"
+294.0,0.0133800622689683,carryover,"carry-over (bf=first, no target)"
+295.0,0.0020201771111816,carryover,"carry-over (bf=first, no target)"
+296.0,-0.0061076559880035,carryover,"carry-over (bf=first, no target)"
+297.0,-0.016083339164028,carryover,"carry-over (bf=first, no target)"
+298.0,-0.0060317332293102,carryover,"carry-over (bf=first, no target)"
+299.0,-0.0009990972952156,carryover,"carry-over (bf=first, no target)"
+300.0,0.0061011512152031,carryover,"carry-over (bf=first, no target)"
+301.0,0.0051967029459509,carryover,"carry-over (bf=first, no target)"
+302.0,0.0120482046003633,carryover,"carry-over (bf=first, no target)"
+303.0,0.0030728833524795,carryover,"carry-over (bf=first, no target)"
+304.0,-0.0017502562102911,carryover,"carry-over (bf=first, no target)"
+305.0,0.0017557442961635,carryover,"carry-over (bf=first, no target)"
+306.0,3.9724607163726944e-05,carryover,"carry-over (bf=first, no target)"
+307.0,0.0060816650770201,carryover,"carry-over (bf=first, no target)"
+308.0,0.0087627521097122,carryover,"carry-over (bf=first, no target)"
+309.0,-0.0072525905256881,carryover,"carry-over (bf=first, no target)"
+310.0,0.0014211187807733,carryover,"carry-over (bf=first, no target)"
+311.0,0.0030209338305553,carryover,"carry-over (bf=first, no target)"
+312.0,0.0168529215348778,carryover,"carry-over (bf=first, no target)"
+313.0,0.001691037687479,carryover,"carry-over (bf=first, no target)"
+314.0,-0.0098882749348327,carryover,"carry-over (bf=first, no target)"
+315.0,0.0012371519528686,carryover,"carry-over (bf=first, no target)"
+316.0,-0.0072253807971711,carryover,"carry-over (bf=first, no target)"
+317.0,0.0153440485954448,carryover,"carry-over (bf=first, no target)"
+318.0,0.0030813948374097,carryover,"carry-over (bf=first, no target)"
+319.0,-0.0003047551900237,carryover,"carry-over (bf=first, no target)"
+320.0,-0.00150093355473,carryover,"carry-over (bf=first, no target)"
+321.0,-0.0006152006037862,carryover,"carry-over (bf=first, no target)"
+322.0,5.0732869145697634e-05,carryover,"carry-over (bf=first, no target)"
+323.0,-0.0060534896427744,carryover,"carry-over (bf=first, no target)"
+324.0,0.0050708345645134,carryover,"carry-over (bf=first, no target)"
+325.0,0.0060715637866692,carryover,"carry-over (bf=first, no target)"
+326.0,0.0072204854156643,carryover,"carry-over (bf=first, no target)"
+327.0,0.0134834109561499,carryover,"carry-over (bf=first, no target)"
+328.0,0.0044806790650575,carryover,"carry-over (bf=first, no target)"
+329.0,0.0029734297349381,carryover,"carry-over (bf=first, no target)"
+330.0,0.0112029251858203,carryover,"carry-over (bf=first, no target)"
+331.0,0.0099515245000647,carryover,"carry-over (bf=first, no target)"
+332.0,0.0084799636746168,carryover,"carry-over (bf=first, no target)"
+333.0,-0.0110115875281957,carryover,"carry-over (bf=first, no target)"
+334.0,-0.0048443287098209,carryover,"carry-over (bf=first, no target)"
+335.0,-0.0075243362029953,carryover,"carry-over (bf=first, no target)"
+336.0,0.0118343506676676,carryover,"carry-over (bf=first, no target)"
+337.0,0.0055310669007679,carryover,"carry-over (bf=first, no target)"
+338.0,-0.0070364178247284,carryover,"carry-over (bf=first, no target)"
+339.0,0.0015029867594895,carryover,"carry-over (bf=first, no target)"
+340.0,-0.0052114635912969,carryover,"carry-over (bf=first, no target)"
+341.0,-0.0028107950582056,carryover,"carry-over (bf=first, no target)"
+342.0,0.0138650910093796,carryover,"carry-over (bf=first, no target)"
+343.0,0.0088914717398402,carryover,"carry-over (bf=first, no target)"
+344.0,0.0036978345285554,carryover,"carry-over (bf=first, no target)"
+345.0,0.0075058560171203,carryover,"carry-over (bf=first, no target)"
+346.0,0.0144120784418744,carryover,"carry-over (bf=first, no target)"
+347.0,0.0024169374260241,carryover,"carry-over (bf=first, no target)"
+348.0,0.0044101718434763,carryover,"carry-over (bf=first, no target)"
+349.0,-0.0113333128859571,carryover,"carry-over (bf=first, no target)"
+350.0,0.0027145737646394,carryover,"carry-over (bf=first, no target)"
+351.0,0.019270684685857,carryover,"carry-over (bf=first, no target)"
+352.0,0.013798250932373,carryover,"carry-over (bf=first, no target)"
+353.0,0.0074833867238677,carryover,"carry-over (bf=first, no target)"
+354.0,-0.0139665386221699,carryover,"carry-over (bf=first, no target)"
+355.0,0.0055584348391901,carryover,"carry-over (bf=first, no target)"
+356.0,0.0071407196990325,carryover,"carry-over (bf=first, no target)"
+357.0,0.0121753498502918,carryover,"carry-over (bf=first, no target)"
+358.0,-0.0019198777230533,carryover,"carry-over (bf=first, no target)"
+359.0,0.0055233809754184,carryover,"carry-over (bf=first, no target)"
+360.0,0.0097968134501069,carryover,"carry-over (bf=first, no target)"
+361.0,0.0091643916936101,carryover,"carry-over (bf=first, no target)"
+362.0,0.0081614721009959,carryover,"carry-over (bf=first, no target)"
+363.0,0.0060849684558705,carryover,"carry-over (bf=first, no target)"
+364.0,0.0079248506395979,carryover,"carry-over (bf=first, no target)"
+365.0,0.0008469368271901,carryover,"carry-over (bf=first, no target)"
+366.0,0.0036537427406546,carryover,"carry-over (bf=first, no target)"
+367.0,0.0074932066005128,carryover,"carry-over (bf=first, no target)"
+368.0,0.0086754873259398,carryover,"carry-over (bf=first, no target)"
+369.0,0.0044797517213623,carryover,"carry-over (bf=first, no target)"
+370.0,0.0093112009297913,carryover,"carry-over (bf=first, no target)"
+371.0,-0.0056812317455468,carryover,"carry-over (bf=first, no target)"
+372.0,-0.0062211073769802,carryover,"carry-over (bf=first, no target)"
+373.0,-0.0040464310456478,carryover,"carry-over (bf=first, no target)"
+374.0,0.0093067322632878,carryover,"carry-over (bf=first, no target)"
+375.0,0.025474206461995,carryover,"carry-over (bf=first, no target)"
+376.0,0.0064651330114529,carryover,"carry-over (bf=first, no target)"
+377.0,0.0091635610142848,carryover,"carry-over (bf=first, no target)"
+378.0,0.0189033128065396,carryover,"carry-over (bf=first, no target)"
+379.0,0.0044902002393065,carryover,"carry-over (bf=first, no target)"
+380.0,-0.0113902375325802,carryover,"carry-over (bf=first, no target)"
+381.0,-0.0055850323659112,carryover,"carry-over (bf=first, no target)"
+382.0,-0.0007514115117723,carryover,"carry-over (bf=first, no target)"
+383.0,0.0070154013192391,carryover,"carry-over (bf=first, no target)"
+384.0,0.0139603850592573,carryover,"carry-over (bf=first, no target)"
+385.0,0.0096768988860551,carryover,"carry-over (bf=first, no target)"
+386.0,0.0034034802082105,carryover,"carry-over (bf=first, no target)"
+387.0,0.004290487667653,carryover,"carry-over (bf=first, no target)"
+388.0,-0.0049363771138,carryover,"carry-over (bf=first, no target)"
+389.0,-0.0009811299197215,carryover,"carry-over (bf=first, no target)"
+390.0,0.0268278452331482,carryover,"carry-over (bf=first, no target)"
+391.0,0.0091814945583212,carryover,"carry-over (bf=first, no target)"
+392.0,0.0027001372634583,carryover,"carry-over (bf=first, no target)"
+393.0,-0.0009911916376337,carryover,"carry-over (bf=first, no target)"
+394.0,0.0131123836660052,carryover,"carry-over (bf=first, no target)"
+395.0,0.0184023687124668,carryover,"carry-over (bf=first, no target)"
+396.0,0.0044485854122156,carryover,"carry-over (bf=first, no target)"
+397.0,0.0025517504691396,carryover,"carry-over (bf=first, no target)"
+398.0,0.0038580206985505,carryover,"carry-over (bf=first, no target)"
+399.0,0.0061316289494328,carryover,"carry-over (bf=first, no target)"
+400.0,-0.0039546516476529,carryover,"carry-over (bf=first, no target)"
+401.0,-0.0055396001304575,carryover,"carry-over (bf=first, no target)"
+402.0,0.000924416023742,carryover,"carry-over (bf=first, no target)"
+403.0,0.0074046471461697,carryover,"carry-over (bf=first, no target)"
+404.0,0.0070018919695336,carryover,"carry-over (bf=first, no target)"
+405.0,0.0046438156392403,carryover,"carry-over (bf=first, no target)"
+406.0,0.0122975709613371,carryover,"carry-over (bf=first, no target)"
+407.0,0.0082417024456171,carryover,"carry-over (bf=first, no target)"
+408.0,-0.0048328770688255,carryover,"carry-over (bf=first, no target)"
+409.0,0.011897764613562,carryover,"carry-over (bf=first, no target)"
+410.0,0.013938783688765,carryover,"carry-over (bf=first, no target)"
+411.0,0.0153117525200041,carryover,"carry-over (bf=first, no target)"
+412.0,0.0203379988759522,carryover,"carry-over (bf=first, no target)"
+413.0,0.0082883177510995,carryover,"carry-over (bf=first, no target)"
+414.0,-0.000398152477834,carryover,"carry-over (bf=first, no target)"
+415.0,0.0039828316989254,carryover,"carry-over (bf=first, no target)"
+416.0,0.0068781484216984,carryover,"carry-over (bf=first, no target)"
+417.0,-0.0030839262397508,carryover,"carry-over (bf=first, no target)"
+418.0,0.0040623752454216,carryover,"carry-over (bf=first, no target)"
+419.0,0.0062371439000363,carryover,"carry-over (bf=first, no target)"
+420.0,0.0009610544636506,carryover,"carry-over (bf=first, no target)"
+421.0,0.0041490737087368,carryover,"carry-over (bf=first, no target)"
+422.0,-0.0019124592373476,carryover,"carry-over (bf=first, no target)"
+423.0,0.0118489000720822,carryover,"carry-over (bf=first, no target)"
+424.0,0.0020866290847854,carryover,"carry-over (bf=first, no target)"
+425.0,0.0122125676429396,carryover,"carry-over (bf=first, no target)"
+426.0,0.0109630367537416,carryover,"carry-over (bf=first, no target)"
+427.0,0.0142773417040809,carryover,"carry-over (bf=first, no target)"
+428.0,0.0053385423464158,carryover,"carry-over (bf=first, no target)"
+429.0,0.0127161713143841,carryover,"carry-over (bf=first, no target)"
+430.0,0.0111358964490992,carryover,"carry-over (bf=first, no target)"
+431.0,0.0091613228326981,carryover,"carry-over (bf=first, no target)"
+432.0,0.0024271107409745,carryover,"carry-over (bf=first, no target)"
+433.0,0.0107167044383027,carryover,"carry-over (bf=first, no target)"
+434.0,-0.0049062232298902,carryover,"carry-over (bf=first, no target)"
+435.0,0.0122143647361872,carryover,"carry-over (bf=first, no target)"
+436.0,0.0225614271811425,carryover,"carry-over (bf=first, no target)"
+437.0,0.0042075346934566,carryover,"carry-over (bf=first, no target)"
+438.0,0.0069673522572832,carryover,"carry-over (bf=first, no target)"
+439.0,0.0139979002929768,carryover,"carry-over (bf=first, no target)"
+440.0,0.0049807427361292,carryover,"carry-over (bf=first, no target)"
+441.0,0.0122571637258461,carryover,"carry-over (bf=first, no target)"
+442.0,0.0088449500838727,carryover,"carry-over (bf=first, no target)"
+443.0,-0.0002000784482758,carryover,"carry-over (bf=first, no target)"
+444.0,-0.0062806294036676,carryover,"carry-over (bf=first, no target)"
+445.0,0.0015677231018429,carryover,"carry-over (bf=first, no target)"
+446.0,0.0040778113241968,carryover,"carry-over (bf=first, no target)"
+447.0,0.0224973031448882,carryover,"carry-over (bf=first, no target)"
+448.0,0.0214192528440726,carryover,"carry-over (bf=first, no target)"
+449.0,0.0081708327252316,carryover,"carry-over (bf=first, no target)"
+450.0,0.0045668791817954,carryover,"carry-over (bf=first, no target)"
+451.0,0.0136641403495874,carryover,"carry-over (bf=first, no target)"
+452.0,0.0223460638255135,carryover,"carry-over (bf=first, no target)"
+453.0,0.0215107149216109,carryover,"carry-over (bf=first, no target)"
+454.0,0.0063249025430023,carryover,"carry-over (bf=first, no target)"
+455.0,0.0029720084482898,carryover,"carry-over (bf=first, no target)"
+456.0,-0.0003122803715216,carryover,"carry-over (bf=first, no target)"
+457.0,0.0124022963331782,carryover,"carry-over (bf=first, no target)"
+458.0,0.0162239526045926,carryover,"carry-over (bf=first, no target)"
+459.0,0.0162847458539205,carryover,"carry-over (bf=first, no target)"
+460.0,0.0062600571096727,carryover,"carry-over (bf=first, no target)"
+461.0,0.0048714894626611,carryover,"carry-over (bf=first, no target)"
+462.0,0.0062771927070137,carryover,"carry-over (bf=first, no target)"
+463.0,0.0168899967031999,carryover,"carry-over (bf=first, no target)"
+464.0,0.0118294519549522,carryover,"carry-over (bf=first, no target)"
+465.0,0.0103506421403221,carryover,"carry-over (bf=first, no target)"
+466.0,-0.0001537784211769,carryover,"carry-over (bf=first, no target)"
+467.0,0.0054724481943591,carryover,"carry-over (bf=first, no target)"
+468.0,0.0031024139920932,carryover,"carry-over (bf=first, no target)"
+469.0,0.0207572114045095,carryover,"carry-over (bf=first, no target)"
+470.0,0.0143011182459895,carryover,"carry-over (bf=first, no target)"
+471.0,0.0095918132429106,carryover,"carry-over (bf=first, no target)"
+472.0,0.0062233479960038,carryover,"carry-over (bf=first, no target)"
+473.0,0.0130334231136286,carryover,"carry-over (bf=first, no target)"
+474.0,-0.0002453272936397,carryover,"carry-over (bf=first, no target)"
+475.0,0.0100523678298847,carryover,"carry-over (bf=first, no target)"
+476.0,0.0222906822106461,carryover,"carry-over (bf=first, no target)"
+477.0,0.0206429480577785,carryover,"carry-over (bf=first, no target)"
+478.0,0.016432959828494,carryover,"carry-over (bf=first, no target)"
+479.0,-0.0024562881951073,carryover,"carry-over (bf=first, no target)"
+480.0,0.0019852239290996,carryover,"carry-over (bf=first, no target)"
+481.0,0.011823629751273,carryover,"carry-over (bf=first, no target)"
+482.0,0.0156008082243497,carryover,"carry-over (bf=first, no target)"
+483.0,0.010896372782212,carryover,"carry-over (bf=first, no target)"
+484.0,0.0066856583311381,carryover,"carry-over (bf=first, no target)"
+485.0,0.0301416823904032,carryover,"carry-over (bf=first, no target)"
+486.0,0.0150586479423742,carryover,"carry-over (bf=first, no target)"
+487.0,0.0125471111024078,carryover,"carry-over (bf=first, no target)"
+488.0,0.0263624830855313,carryover,"carry-over (bf=first, no target)"
+489.0,0.0161432449656739,carryover,"carry-over (bf=first, no target)"
+490.0,-0.0020022872999625,carryover,"carry-over (bf=first, no target)"
+491.0,-0.0014358047006401,carryover,"carry-over (bf=first, no target)"
+492.0,0.0049168154151457,carryover,"carry-over (bf=first, no target)"
+493.0,0.0008517484860215,carryover,"carry-over (bf=first, no target)"
+494.0,0.0211843489609009,carryover,"carry-over (bf=first, no target)"
+495.0,0.0400094377701609,carryover,"carry-over (bf=first, no target)"
+496.0,0.0175598895489814,carryover,"carry-over (bf=first, no target)"
+497.0,0.0106464036677911,carryover,"carry-over (bf=first, no target)"
+498.0,0.0171502635418541,carryover,"carry-over (bf=first, no target)"
+499.0,0.0192901005334267,carryover,"carry-over (bf=first, no target)"
+500.0,0.010324335150722,carryover,"carry-over (bf=first, no target)"
+501.0,0.0151913200999143,carryover,"carry-over (bf=first, no target)"
+502.0,0.0230950008413177,carryover,"carry-over (bf=first, no target)"
+503.0,0.015903346464916,carryover,"carry-over (bf=first, no target)"
+504.0,0.0123162171214596,carryover,"carry-over (bf=first, no target)"
+505.0,0.0308601536803854,carryover,"carry-over (bf=first, no target)"
+506.0,0.0239314692884917,carryover,"carry-over (bf=first, no target)"
+507.0,0.0233718399468241,carryover,"carry-over (bf=first, no target)"
+508.0,0.0120508899043159,carryover,"carry-over (bf=first, no target)"
+509.0,0.0233743702455413,carryover,"carry-over (bf=first, no target)"
+510.0,0.0127893777223997,carryover,"carry-over (bf=first, no target)"
+511.0,0.015127505284922,carryover,"carry-over (bf=first, no target)"
+512.0,0.0137013111966011,carryover,"carry-over (bf=first, no target)"
+513.0,0.010510680223601,carryover,"carry-over (bf=first, no target)"
+514.0,0.0245656589723131,carryover,"carry-over (bf=first, no target)"
+515.0,0.0170973611330271,carryover,"carry-over (bf=first, no target)"
+516.0,0.0171847429769211,carryover,"carry-over (bf=first, no target)"
+517.0,0.0180076451791011,carryover,"carry-over (bf=first, no target)"
+518.0,0.0109014760966497,carryover,"carry-over (bf=first, no target)"
+519.0,0.0232423932761749,carryover,"carry-over (bf=first, no target)"
+520.0,0.0244671981419042,carryover,"carry-over (bf=first, no target)"
+521.0,0.0175517875405706,carryover,"carry-over (bf=first, no target)"
+522.0,0.0144440337153417,carryover,"carry-over (bf=first, no target)"
+523.0,0.0113424219130831,carryover,"carry-over (bf=first, no target)"
+524.0,0.0157187705687622,carryover,"carry-over (bf=first, no target)"
+525.0,0.0163631044754186,carryover,"carry-over (bf=first, no target)"
+526.0,0.0165244848404233,carryover,"carry-over (bf=first, no target)"
+527.0,0.0204120688711961,carryover,"carry-over (bf=first, no target)"
+528.0,0.0368987456672309,carryover,"carry-over (bf=first, no target)"
+529.0,0.0370608589355203,carryover,"carry-over (bf=first, no target)"
+530.0,0.0087715903052609,carryover,"carry-over (bf=first, no target)"
+531.0,0.0109244024716748,carryover,"carry-over (bf=first, no target)"
+532.0,0.0094697832422463,carryover,"carry-over (bf=first, no target)"
+533.0,0.0163886451771322,carryover,"carry-over (bf=first, no target)"
+534.0,0.0177607648382105,carryover,"carry-over (bf=first, no target)"
+535.0,0.0235473385480222,carryover,"carry-over (bf=first, no target)"
+536.0,0.0027682370207449,carryover,"carry-over (bf=first, no target)"
+537.0,0.0162422673081863,carryover,"carry-over (bf=first, no target)"
+538.0,0.0227125993201093,carryover,"carry-over (bf=first, no target)"
+539.0,0.0373567349471315,carryover,"carry-over (bf=first, no target)"
+540.0,0.0080261728843922,carryover,"carry-over (bf=first, no target)"
+541.0,0.0101559524019512,carryover,"carry-over (bf=first, no target)"
+542.0,0.0155501269682112,carryover,"carry-over (bf=first, no target)"
+543.0,0.0125384897766345,carryover,"carry-over (bf=first, no target)"
+544.0,0.0208171397433343,carryover,"carry-over (bf=first, no target)"
+545.0,0.0171897399687681,carryover,"carry-over (bf=first, no target)"
+546.0,0.0218236549419081,carryover,"carry-over (bf=first, no target)"
+547.0,0.0346073868339313,carryover,"carry-over (bf=first, no target)"
+548.0,0.0250784130147785,carryover,"carry-over (bf=first, no target)"
+549.0,0.0218643521801542,carryover,"carry-over (bf=first, no target)"
+550.0,0.0179576276687809,carryover,"carry-over (bf=first, no target)"
+551.0,0.0209549486451843,carryover,"carry-over (bf=first, no target)"
+552.0,0.0152536297269589,carryover,"carry-over (bf=first, no target)"
+553.0,0.0303615067738727,carryover,"carry-over (bf=first, no target)"
+554.0,0.0340978586076268,carryover,"carry-over (bf=first, no target)"
+555.0,0.0247310406995726,carryover,"carry-over (bf=first, no target)"
+556.0,0.0237285059166358,carryover,"carry-over (bf=first, no target)"
+557.0,0.018284733292555,carryover,"carry-over (bf=first, no target)"
+558.0,0.0066909339024912,carryover,"carry-over (bf=first, no target)"
+559.0,0.0074909198045602,carryover,"carry-over (bf=first, no target)"
+560.0,0.0232594723853285,carryover,"carry-over (bf=first, no target)"
+561.0,0.0296017548015647,carryover,"carry-over (bf=first, no target)"
+562.0,0.0264694001434184,carryover,"carry-over (bf=first, no target)"
+563.0,0.02030722840614,carryover,"carry-over (bf=first, no target)"
+564.0,0.0242568998906245,carryover,"carry-over (bf=first, no target)"
+565.0,0.0128578602668216,carryover,"carry-over (bf=first, no target)"
+566.0,0.0128684379865617,carryover,"carry-over (bf=first, no target)"
+567.0,0.0210843771924773,carryover,"carry-over (bf=first, no target)"
+568.0,0.0210966553059632,carryover,"carry-over (bf=first, no target)"
+569.0,0.0219322399938981,carryover,"carry-over (bf=first, no target)"
+570.0,0.0342869847884363,carryover,"carry-over (bf=first, no target)"
+571.0,0.0266169513298075,carryover,"carry-over (bf=first, no target)"
+572.0,0.039819015468967,carryover,"carry-over (bf=first, no target)"
+573.0,0.0241916038152911,carryover,"carry-over (bf=first, no target)"
+574.0,0.0192703559933837,carryover,"carry-over (bf=first, no target)"
+575.0,0.0207937969610938,carryover,"carry-over (bf=first, no target)"
+576.0,0.0134166813032132,carryover,"carry-over (bf=first, no target)"
+577.0,0.0202020112652867,carryover,"carry-over (bf=first, no target)"
+578.0,0.0265356942906835,carryover,"carry-over (bf=first, no target)"
+579.0,0.027332259647359,carryover,"carry-over (bf=first, no target)"
+580.0,0.0445108693814733,carryover,"carry-over (bf=first, no target)"
+581.0,0.0315673143918138,carryover,"carry-over (bf=first, no target)"
+582.0,0.0338156352400043,carryover,"carry-over (bf=first, no target)"
+583.0,0.0326151627651771,carryover,"carry-over (bf=first, no target)"
+584.0,0.015414753581231,carryover,"carry-over (bf=first, no target)"
+585.0,0.0127722727663748,carryover,"carry-over (bf=first, no target)"
+586.0,0.0222669325666879,carryover,"carry-over (bf=first, no target)"
+587.0,0.0240738211466595,carryover,"carry-over (bf=first, no target)"
+588.0,0.0287521231597098,carryover,"carry-over (bf=first, no target)"
+589.0,0.0241398880338072,carryover,"carry-over (bf=first, no target)"
+590.0,0.0036411574899464,carryover,"carry-over (bf=first, no target)"
+591.0,0.0103749885777748,carryover,"carry-over (bf=first, no target)"
+592.0,0.0284794310274349,carryover,"carry-over (bf=first, no target)"
+593.0,0.0350292693259124,carryover,"carry-over (bf=first, no target)"
+594.0,0.038170470358172,carryover,"carry-over (bf=first, no target)"
+595.0,0.0397864303449413,carryover,"carry-over (bf=first, no target)"
+596.0,0.0228330503503126,carryover,"carry-over (bf=first, no target)"
+597.0,0.020220017733763,carryover,"carry-over (bf=first, no target)"
+598.0,0.0130694889731142,carryover,"carry-over (bf=first, no target)"
+599.0,0.0186630732295212,carryover,"carry-over (bf=first, no target)"
+600.0,0.0280230866676678,carryover,"carry-over (bf=first, no target)"
+601.0,0.02814753727153,carryover,"carry-over (bf=first, no target)"
+602.0,0.0384240698556004,carryover,"carry-over (bf=first, no target)"
+603.0,0.0260427304498955,carryover,"carry-over (bf=first, no target)"
+604.0,0.0365075527886471,carryover,"carry-over (bf=first, no target)"
+605.0,0.0326157738008925,carryover,"carry-over (bf=first, no target)"
+606.0,0.0149092475674095,carryover,"carry-over (bf=first, no target)"
+607.0,0.0108358440464417,carryover,"carry-over (bf=first, no target)"
+608.0,0.023453985698798,carryover,"carry-over (bf=first, no target)"
+609.0,0.0264232054034252,carryover,"carry-over (bf=first, no target)"
+610.0,0.0304187309070647,carryover,"carry-over (bf=first, no target)"
+611.0,0.0354847339426944,carryover,"carry-over (bf=first, no target)"
+612.0,0.0391277476394691,carryover,"carry-over (bf=first, no target)"
+613.0,0.0383565032309718,carryover,"carry-over (bf=first, no target)"
+614.0,0.0220752177836791,carryover,"carry-over (bf=first, no target)"
+615.0,0.0169234231763759,carryover,"carry-over (bf=first, no target)"
+616.0,0.0157546692429155,carryover,"carry-over (bf=first, no target)"
+617.0,0.0315249390812999,carryover,"carry-over (bf=first, no target)"
+618.0,0.0361873238055165,carryover,"carry-over (bf=first, no target)"
+619.0,0.0335739983755933,carryover,"carry-over (bf=first, no target)"
+620.0,0.0241957075275278,carryover,"carry-over (bf=first, no target)"
+621.0,0.0272069305811406,carryover,"carry-over (bf=first, no target)"
+622.0,0.0290921391650744,carryover,"carry-over (bf=first, no target)"
+623.0,0.0123234893487467,carryover,"carry-over (bf=first, no target)"
+624.0,0.0217083583197919,carryover,"carry-over (bf=first, no target)"
+625.0,0.0171269166702714,carryover,"carry-over (bf=first, no target)"
+626.0,0.0222005065533448,carryover,"carry-over (bf=first, no target)"
+627.0,0.0259768922852421,carryover,"carry-over (bf=first, no target)"
+628.0,0.0458315717198054,carryover,"carry-over (bf=first, no target)"
+629.0,0.0286579996666702,carryover,"carry-over (bf=first, no target)"
+630.0,0.0305933401007418,carryover,"carry-over (bf=first, no target)"
+631.0,0.0449719986147245,carryover,"carry-over (bf=first, no target)"
+632.0,0.0250406477083897,carryover,"carry-over (bf=first, no target)"
+633.0,0.0256119745576732,carryover,"carry-over (bf=first, no target)"
+634.0,0.0316554414076586,carryover,"carry-over (bf=first, no target)"
+635.0,0.03611720338061,carryover,"carry-over (bf=first, no target)"
+636.0,0.0363676573468696,carryover,"carry-over (bf=first, no target)"
+637.0,0.0286598947673866,carryover,"carry-over (bf=first, no target)"
+638.0,0.031374986381456,carryover,"carry-over (bf=first, no target)"
+639.0,0.014230191723481,carryover,"carry-over (bf=first, no target)"
+640.0,0.0286918172637928,carryover,"carry-over (bf=first, no target)"
+641.0,0.0170727061394204,carryover,"carry-over (bf=first, no target)"
+642.0,0.0188118345517418,carryover,"carry-over (bf=first, no target)"
+643.0,0.0244961205076732,carryover,"carry-over (bf=first, no target)"
+644.0,0.0309009624836953,carryover,"carry-over (bf=first, no target)"
+645.0,0.0356570040753734,carryover,"carry-over (bf=first, no target)"
+646.0,0.0220613580150397,carryover,"carry-over (bf=first, no target)"
+647.0,0.0215437237791915,carryover,"carry-over (bf=first, no target)"
+648.0,0.0477911267785424,carryover,"carry-over (bf=first, no target)"
+649.0,0.0355627663375335,carryover,"carry-over (bf=first, no target)"
+650.0,0.0212056235542279,carryover,"carry-over (bf=first, no target)"
+651.0,0.0328856890230655,carryover,"carry-over (bf=first, no target)"
+652.0,0.0304510483098452,carryover,"carry-over (bf=first, no target)"
+653.0,0.0332225665258123,carryover,"carry-over (bf=first, no target)"
+654.0,0.0411044224811574,carryover,"carry-over (bf=first, no target)"
+655.0,0.0436005079418944,carryover,"carry-over (bf=first, no target)"
+656.0,0.0423369205961909,carryover,"carry-over (bf=first, no target)"
+657.0,0.0181158247475243,carryover,"carry-over (bf=first, no target)"
+658.0,0.0417953809009974,carryover,"carry-over (bf=first, no target)"
+659.0,0.0330531181633508,carryover,"carry-over (bf=first, no target)"
+660.0,0.0291216352722578,carryover,"carry-over (bf=first, no target)"
+661.0,0.0305449299422333,carryover,"carry-over (bf=first, no target)"
+662.0,0.0420671429768537,carryover,"carry-over (bf=first, no target)"
+663.0,0.0336972956497971,carryover,"carry-over (bf=first, no target)"
+664.0,0.0304928454267194,carryover,"carry-over (bf=first, no target)"
+665.0,0.0162241168978649,carryover,"carry-over (bf=first, no target)"
+666.0,0.030427476852779,carryover,"carry-over (bf=first, no target)"
+667.0,0.0347322708567476,carryover,"carry-over (bf=first, no target)"
+668.0,0.0276161722671197,carryover,"carry-over (bf=first, no target)"
+669.0,0.0299520057657431,carryover,"carry-over (bf=first, no target)"
+670.0,0.0329860976645335,carryover,"carry-over (bf=first, no target)"
+671.0,0.0330552593151933,carryover,"carry-over (bf=first, no target)"
+672.0,0.0289623253091697,carryover,"carry-over (bf=first, no target)"
+673.0,0.0287175797105021,carryover,"carry-over (bf=first, no target)"
+674.0,0.0399386567302384,carryover,"carry-over (bf=first, no target)"
+675.0,0.0283647818041332,carryover,"carry-over (bf=first, no target)"
+676.0,0.0209714823644713,carryover,"carry-over (bf=first, no target)"
+677.0,0.0238648216305925,carryover,"carry-over (bf=first, no target)"
+678.0,0.0278670069049535,carryover,"carry-over (bf=first, no target)"
+679.0,0.0339605256653952,carryover,"carry-over (bf=first, no target)"
+680.0,0.0404435462704677,carryover,"carry-over (bf=first, no target)"
+681.0,0.0408300749800405,carryover,"carry-over (bf=first, no target)"
+682.0,0.0285376647062207,carryover,"carry-over (bf=first, no target)"
+683.0,0.021999864853397,carryover,"carry-over (bf=first, no target)"
+684.0,0.0119588867890296,carryover,"carry-over (bf=first, no target)"
+685.0,0.0246096076196877,carryover,"carry-over (bf=first, no target)"
+686.0,0.0439805830319484,carryover,"carry-over (bf=first, no target)"
+687.0,0.0454977610409335,carryover,"carry-over (bf=first, no target)"
+688.0,0.0207173587900344,carryover,"carry-over (bf=first, no target)"
+689.0,0.0271378892281992,carryover,"carry-over (bf=first, no target)"
+690.0,0.0328487254851284,carryover,"carry-over (bf=first, no target)"
+691.0,0.0363553192292087,carryover,"carry-over (bf=first, no target)"
+692.0,0.0238139881365118,carryover,"carry-over (bf=first, no target)"
+693.0,0.0292813850006901,carryover,"carry-over (bf=first, no target)"
+694.0,0.0408811627943528,carryover,"carry-over (bf=first, no target)"
+695.0,0.047821489923141,carryover,"carry-over (bf=first, no target)"
+696.0,0.0307092663479569,carryover,"carry-over (bf=first, no target)"
+697.0,0.0251232364881648,carryover,"carry-over (bf=first, no target)"
+698.0,0.0238332301476695,carryover,"carry-over (bf=first, no target)"
+699.0,0.0298347029715184,carryover,"carry-over (bf=first, no target)"
+700.0,0.035381887012349,carryover,"carry-over (bf=first, no target)"
+701.0,0.0363492033088252,carryover,"carry-over (bf=first, no target)"
+702.0,0.0374284122417911,carryover,"carry-over (bf=first, no target)"
+703.0,0.0393460247359334,carryover,"carry-over (bf=first, no target)"
+704.0,0.0358884789889168,carryover,"carry-over (bf=first, no target)"
+705.0,0.0292880710777287,carryover,"carry-over (bf=first, no target)"
+706.0,0.0334817604325232,carryover,"carry-over (bf=first, no target)"
+707.0,0.0283744471371205,carryover,"carry-over (bf=first, no target)"
+708.0,0.0341227375548758,carryover,"carry-over (bf=first, no target)"
+709.0,0.0379667324102328,carryover,"carry-over (bf=first, no target)"
+710.0,0.0333219850089516,carryover,"carry-over (bf=first, no target)"
+711.0,0.0336867027596854,carryover,"carry-over (bf=first, no target)"
+712.0,0.0354315984010478,carryover,"carry-over (bf=first, no target)"
+713.0,0.0313985911206327,carryover,"carry-over (bf=first, no target)"
+714.0,0.0247953192430738,carryover,"carry-over (bf=first, no target)"
+715.0,0.0198693920940407,carryover,"carry-over (bf=first, no target)"
+716.0,0.0314015152310931,carryover,"carry-over (bf=first, no target)"
+717.0,0.0429856664587147,carryover,"carry-over (bf=first, no target)"
+718.0,0.0447384581877408,carryover,"carry-over (bf=first, no target)"
+719.0,0.0422804821562694,carryover,"carry-over (bf=first, no target)"
+720.0,0.0219055300249015,carryover,"carry-over (bf=first, no target)"
+721.0,0.0141081773121998,carryover,"carry-over (bf=first, no target)"
+722.0,0.0259431213742811,carryover,"carry-over (bf=first, no target)"
+723.0,0.0332052262812387,carryover,"carry-over (bf=first, no target)"
+724.0,0.0421492066751572,carryover,"carry-over (bf=first, no target)"
+725.0,0.0427219277860801,carryover,"carry-over (bf=first, no target)"
+726.0,0.0520120020746084,carryover,"carry-over (bf=first, no target)"
+727.0,0.0441184152008666,carryover,"carry-over (bf=first, no target)"
+728.0,0.0418503296944061,carryover,"carry-over (bf=first, no target)"
+729.0,0.0309640191934423,carryover,"carry-over (bf=first, no target)"
+730.0,0.0307077698011237,carryover,"carry-over (bf=first, no target)"
+731.0,0.01910601338313,carryover,"carry-over (bf=first, no target)"
+732.0,0.0261791050725568,carryover,"carry-over (bf=first, no target)"
+733.0,0.0313687960086683,carryover,"carry-over (bf=first, no target)"
+734.0,0.0396774193769156,carryover,"carry-over (bf=first, no target)"
+735.0,0.0312072601126756,carryover,"carry-over (bf=first, no target)"
+736.0,0.033934921459946,carryover,"carry-over (bf=first, no target)"
+737.0,0.0382240730444616,carryover,"carry-over (bf=first, no target)"
+738.0,0.0384999094961013,carryover,"carry-over (bf=first, no target)"
+739.0,0.0422064676450162,carryover,"carry-over (bf=first, no target)"
+740.0,0.034964657952714,carryover,"carry-over (bf=first, no target)"
+741.0,0.0528362497347068,carryover,"carry-over (bf=first, no target)"
+742.0,0.0503592305305433,carryover,"carry-over (bf=first, no target)"
+743.0,0.0380919795417655,carryover,"carry-over (bf=first, no target)"
+744.0,0.0175199380821,carryover,"carry-over (bf=first, no target)"
+745.0,0.0239979163273096,carryover,"carry-over (bf=first, no target)"
+746.0,0.0376224718512929,carryover,"carry-over (bf=first, no target)"
+747.0,0.0455283238906245,carryover,"carry-over (bf=first, no target)"
+748.0,0.0340026587754493,carryover,"carry-over (bf=first, no target)"
+749.0,0.0369898461020667,carryover,"carry-over (bf=first, no target)"
+750.0,0.028305761592442,carryover,"carry-over (bf=first, no target)"
+751.0,0.0368225714185221,carryover,"carry-over (bf=first, no target)"
+752.0,0.0368307208616425,carryover,"carry-over (bf=first, no target)"
+753.0,0.0407114990404666,carryover,"carry-over (bf=first, no target)"
+754.0,0.0319221012846115,carryover,"carry-over (bf=first, no target)"
+755.0,0.0394325575127973,carryover,"carry-over (bf=first, no target)"
+756.0,0.0411483159374803,carryover,"carry-over (bf=first, no target)"
+757.0,0.0463475955940095,carryover,"carry-over (bf=first, no target)"
+758.0,0.0545021370686793,carryover,"carry-over (bf=first, no target)"
+759.0,0.0389636581463292,carryover,"carry-over (bf=first, no target)"
+760.0,0.0181507200507446,carryover,"carry-over (bf=first, no target)"
+761.0,0.023111243217615,carryover,"carry-over (bf=first, no target)"
+762.0,0.034888377422888,carryover,"carry-over (bf=first, no target)"
+763.0,0.0435056034984437,carryover,"carry-over (bf=first, no target)"
+764.0,0.0311696454820253,carryover,"carry-over (bf=first, no target)"
+765.0,0.0374359534703261,carryover,"carry-over (bf=first, no target)"
+766.0,0.0312014786819281,carryover,"carry-over (bf=first, no target)"
+767.0,0.0432721532069857,carryover,"carry-over (bf=first, no target)"
+768.0,0.0481233845961748,carryover,"carry-over (bf=first, no target)"
+769.0,0.0469253795192736,carryover,"carry-over (bf=first, no target)"
+770.0,0.0440274529114059,carryover,"carry-over (bf=first, no target)"
+771.0,0.0406042691356711,carryover,"carry-over (bf=first, no target)"
+772.0,0.0330840649525088,carryover,"carry-over (bf=first, no target)"
+773.0,0.0377852780861065,carryover,"carry-over (bf=first, no target)"
+774.0,0.0652505730229036,carryover,"carry-over (bf=first, no target)"
+775.0,0.0340927326342077,carryover,"carry-over (bf=first, no target)"
+776.0,0.0433314913128413,carryover,"carry-over (bf=first, no target)"
+777.0,0.0282061791302457,carryover,"carry-over (bf=first, no target)"
+778.0,0.0294104005494144,carryover,"carry-over (bf=first, no target)"
+779.0,0.0202021445623801,carryover,"carry-over (bf=first, no target)"
+780.0,0.0336000311662365,carryover,"carry-over (bf=first, no target)"
+781.0,0.0429946965445537,carryover,"carry-over (bf=first, no target)"
+782.0,0.0482604942304742,carryover,"carry-over (bf=first, no target)"
+783.0,0.032424048560915,carryover,"carry-over (bf=first, no target)"
+784.0,0.0490209346483361,carryover,"carry-over (bf=first, no target)"
+785.0,0.0401174684515481,carryover,"carry-over (bf=first, no target)"
+786.0,0.0397024630238451,carryover,"carry-over (bf=first, no target)"
+787.0,0.0426845623916483,carryover,"carry-over (bf=first, no target)"
+788.0,0.0378958491253245,carryover,"carry-over (bf=first, no target)"
+789.0,0.0353427280209661,carryover,"carry-over (bf=first, no target)"
+790.0,0.0339896047811638,carryover,"carry-over (bf=first, no target)"
+791.0,0.0339110533256103,carryover,"carry-over (bf=first, no target)"
+792.0,0.0364340129505613,carryover,"carry-over (bf=first, no target)"
+793.0,0.0386654903167427,carryover,"carry-over (bf=first, no target)"
+794.0,0.0429114353294846,carryover,"carry-over (bf=first, no target)"
+795.0,0.040913502830322,carryover,"carry-over (bf=first, no target)"
+796.0,0.0403236528120798,carryover,"carry-over (bf=first, no target)"
+797.0,0.0428476976573577,carryover,"carry-over (bf=first, no target)"
+798.0,0.0402643845934402,carryover,"carry-over (bf=first, no target)"
+799.0,0.0433451011267971,carryover,"carry-over (bf=first, no target)"
+800.0,0.0378115500986586,carryover,"carry-over (bf=first, no target)"
+801.0,0.0326707409180571,carryover,"carry-over (bf=first, no target)"
+802.0,0.0444710189618557,carryover,"carry-over (bf=first, no target)"
+803.0,0.0378866390128118,carryover,"carry-over (bf=first, no target)"
+804.0,0.0379709495197344,carryover,"carry-over (bf=first, no target)"
+805.0,0.0408603470635204,carryover,"carry-over (bf=first, no target)"
+806.0,0.0381785779511023,carryover,"carry-over (bf=first, no target)"
+807.0,0.031542708410801,carryover,"carry-over (bf=first, no target)"
+808.0,0.0362143480258447,carryover,"carry-over (bf=first, no target)"
+809.0,0.041626005962656,carryover,"carry-over (bf=first, no target)"
+810.0,0.0453803323394508,carryover,"carry-over (bf=first, no target)"
+811.0,0.0295878443391295,carryover,"carry-over (bf=first, no target)"
+812.0,0.0406603368577895,carryover,"carry-over (bf=first, no target)"
+813.0,0.0489278483944977,carryover,"carry-over (bf=first, no target)"
+814.0,0.0395847123036707,carryover,"carry-over (bf=first, no target)"
+815.0,0.0391824043551691,carryover,"carry-over (bf=first, no target)"
+816.0,0.0400027857540363,carryover,"carry-over (bf=first, no target)"
+817.0,0.0409895965320084,carryover,"carry-over (bf=first, no target)"
+818.0,0.0260516122973131,carryover,"carry-over (bf=first, no target)"
+819.0,0.0377386281616898,carryover,"carry-over (bf=first, no target)"
+820.0,0.0395594561421352,carryover,"carry-over (bf=first, no target)"
+821.0,0.0396779794670631,carryover,"carry-over (bf=first, no target)"
+822.0,0.040862471397709,carryover,"carry-over (bf=first, no target)"
+823.0,0.0279639402248577,carryover,"carry-over (bf=first, no target)"
+824.0,0.0393045641194866,carryover,"carry-over (bf=first, no target)"
+825.0,0.0568571734169598,carryover,"carry-over (bf=first, no target)"
+826.0,0.0421823512996288,carryover,"carry-over (bf=first, no target)"
+827.0,0.0376154135458062,carryover,"carry-over (bf=first, no target)"
+828.0,0.0383337916895909,carryover,"carry-over (bf=first, no target)"
+829.0,0.0331078987345501,carryover,"carry-over (bf=first, no target)"
+830.0,0.038344307831668,carryover,"carry-over (bf=first, no target)"
+831.0,0.0386090534954597,carryover,"carry-over (bf=first, no target)"
+832.0,0.0426494205865424,carryover,"carry-over (bf=first, no target)"
+833.0,0.0465499499535582,carryover,"carry-over (bf=first, no target)"
+834.0,0.0389659258915742,carryover,"carry-over (bf=first, no target)"
+835.0,0.0493437694248743,carryover,"carry-over (bf=first, no target)"
+836.0,0.031009100361441,carryover,"carry-over (bf=first, no target)"
+837.0,0.0310095552596934,carryover,"carry-over (bf=first, no target)"
+838.0,0.0521754346573155,carryover,"carry-over (bf=first, no target)"
+839.0,0.0491965190677534,carryover,"carry-over (bf=first, no target)"
+840.0,0.0390746029097854,carryover,"carry-over (bf=first, no target)"
+841.0,0.0334693288671861,carryover,"carry-over (bf=first, no target)"
+842.0,0.0406535692877918,carryover,"carry-over (bf=first, no target)"
+843.0,0.0421327677271543,carryover,"carry-over (bf=first, no target)"
+844.0,0.0404564329164047,carryover,"carry-over (bf=first, no target)"
+845.0,0.0420169719702379,carryover,"carry-over (bf=first, no target)"
+846.0,0.040450569681294,carryover,"carry-over (bf=first, no target)"
+847.0,0.0298786144888607,carryover,"carry-over (bf=first, no target)"
+848.0,0.0502972438412019,carryover,"carry-over (bf=first, no target)"
+849.0,0.0411737778940768,carryover,"carry-over (bf=first, no target)"
+850.0,0.0353911972412435,carryover,"carry-over (bf=first, no target)"
+851.0,0.0368232126568512,carryover,"carry-over (bf=first, no target)"
+852.0,0.0371895228355745,carryover,"carry-over (bf=first, no target)"
+853.0,0.0284100562008315,carryover,"carry-over (bf=first, no target)"
+854.0,0.0486540282370029,carryover,"carry-over (bf=first, no target)"
+855.0,0.0530309584685095,carryover,"carry-over (bf=first, no target)"
+856.0,0.0456648772413181,carryover,"carry-over (bf=first, no target)"
+857.0,0.027901735346596,carryover,"carry-over (bf=first, no target)"
+858.0,0.0266673701162734,carryover,"carry-over (bf=first, no target)"
+859.0,0.0446239663121739,carryover,"carry-over (bf=first, no target)"
+860.0,0.0404186890035962,carryover,"carry-over (bf=first, no target)"
+861.0,0.035943916896528,carryover,"carry-over (bf=first, no target)"
+862.0,0.0349313315855281,carryover,"carry-over (bf=first, no target)"
+863.0,0.0415612849836932,carryover,"carry-over (bf=first, no target)"
+864.0,0.0438831931552252,carryover,"carry-over (bf=first, no target)"
+865.0,0.0297423352113979,carryover,"carry-over (bf=first, no target)"
+866.0,0.0401434249334453,carryover,"carry-over (bf=first, no target)"
+867.0,0.0298518434355798,carryover,"carry-over (bf=first, no target)"
+868.0,0.036612303034218,carryover,"carry-over (bf=first, no target)"
+869.0,0.0450989268215229,carryover,"carry-over (bf=first, no target)"
+870.0,0.0566383028857542,carryover,"carry-over (bf=first, no target)"
+871.0,0.0505207569263754,carryover,"carry-over (bf=first, no target)"
+872.0,0.0493517920712083,carryover,"carry-over (bf=first, no target)"
+873.0,0.0382446516563961,carryover,"carry-over (bf=first, no target)"
+874.0,0.0329739945305851,carryover,"carry-over (bf=first, no target)"
+875.0,0.0419334645022573,carryover,"carry-over (bf=first, no target)"
+876.0,0.0407101482500804,carryover,"carry-over (bf=first, no target)"
+877.0,0.0368981865613093,carryover,"carry-over (bf=first, no target)"
+878.0,0.0425008963708695,carryover,"carry-over (bf=first, no target)"
+879.0,0.0448046068534591,carryover,"carry-over (bf=first, no target)"
+880.0,0.0399908115196057,carryover,"carry-over (bf=first, no target)"
+881.0,0.0399499866433927,carryover,"carry-over (bf=first, no target)"
+882.0,0.0410324060391209,carryover,"carry-over (bf=first, no target)"
+883.0,0.0466220492917113,carryover,"carry-over (bf=first, no target)"
+884.0,0.0466172295675049,carryover,"carry-over (bf=first, no target)"
+885.0,0.0279533848073976,carryover,"carry-over (bf=first, no target)"
+886.0,0.0210022529867881,carryover,"carry-over (bf=first, no target)"
+887.0,0.0488440006621937,carryover,"carry-over (bf=first, no target)"
+888.0,0.0710286542125615,carryover,"carry-over (bf=first, no target)"
+889.0,0.052187340894898,carryover,"carry-over (bf=first, no target)"
+890.0,0.0310670717733385,carryover,"carry-over (bf=first, no target)"
+891.0,0.0393613033318285,carryover,"carry-over (bf=first, no target)"
+892.0,0.0355010185982784,carryover,"carry-over (bf=first, no target)"
+893.0,0.0394527795543186,carryover,"carry-over (bf=first, no target)"
+894.0,0.0494060045378974,carryover,"carry-over (bf=first, no target)"
+895.0,0.0360277872845227,carryover,"carry-over (bf=first, no target)"
+896.0,0.0418814195870131,carryover,"carry-over (bf=first, no target)"
+897.0,0.0452196950951977,carryover,"carry-over (bf=first, no target)"
+898.0,0.0380395370079966,carryover,"carry-over (bf=first, no target)"
+899.0,0.0401040131796381,carryover,"carry-over (bf=first, no target)"
+900.0,0.04010401317963819,,
+901.0,0.04519295031111703,,
+902.0,0.04100917179849617,,
+903.0,0.045942827972789146,,
+904.0,0.037778725932113844,,
+905.0,0.04613905395382645,,
+906.0,0.041778289387512935,,
+907.0,0.05335119371769448,,
+908.0,0.03446513904285187,,
+909.0,0.03479527225556556,,
+910.0,0.026273195553230266,,
+911.0,0.026533803045203364,,
+912.0,0.035696521724752905,,
+913.0,0.04639962558216748,,
+914.0,0.05608071251954172,,
+915.0,0.04164531488624945,,
+916.0,0.03369335904723325,,
+917.0,0.03352863647768878,,
+918.0,0.029229900209779558,,
+919.0,0.04210251958900013,,
+920.0,0.04909777942598392,,
+921.0,0.04416163753339308,,
+922.0,0.03235433351966854,,
+923.0,0.028851336485451462,,
+924.0,0.03940814333570408,,
+925.0,0.029996402283538615,,
+926.0,0.03496087454138319,,
+927.0,0.03700365576144282,,
+928.0,0.027641729021326,,
+929.0,0.027464926518501187,,
+930.0,0.023160017560046597,,
+931.0,0.025282062171050335,,
+932.0,0.006825053899373046,,
+933.0,0.01734077627625563,,
+934.0,0.02431483614913521,,
+935.0,0.01542980494793067,,
+936.0,0.01890515856504571,,
+937.0,0.013336938070356297,,
+938.0,0.010562756414747021,,
+939.0,0.033190289426365815,,
+940.0,0.013663227713407444,,
+941.0,0.0060067669261787415,,
+942.0,0.0037982959099691627,,
+943.0,0.02307188445628494,,
+944.0,0.02284997129477162,,
+945.0,0.015290585283507241,,
+946.0,0.012086729308133926,,
+947.0,-0.005132057031549397,,
+948.0,-0.004886898585412247,,
+949.0,0.0019938910128303178,,
+950.0,0.0006712041724954432,,
+951.0,-0.0048686421484367415,,
+952.0,0.022754343021444967,,
+953.0,0.00969669198549461,,
+954.0,0.0012517765324027152,,
+955.0,-0.010719591899153169,,
+956.0,-0.009565340035071479,,
+957.0,-0.011312778388774536,,
+958.0,0.000642825130685587,,
+959.0,-0.003405514559164935,,
+960.0,-0.022444729090151938,,
+961.0,-0.026266189386456862,,
+962.0,-0.02038746814490011,,
+963.0,-0.0031737288454158907,,
+964.0,-0.015157119429525245,,
+965.0,-0.018500192073478416,,
+966.0,-0.014623337828818528,,
+967.0,-0.0012209114502725882,,
+968.0,-0.02266782927421218,,
+969.0,-0.020467265794308354,,
+970.0,-0.024526565909332998,,
+971.0,-0.0261009753566932,,
+972.0,-0.03314366787035006,,
+973.0,-0.021787939634856368,,
+974.0,-0.02467386998477039,,
+975.0,-0.03327250680826177,,
+976.0,-0.021838583586801796,,
+977.0,-0.029784941123469633,,
+978.0,-0.026713983238528805,,
+979.0,-0.027033222790295852,,
+980.0,-0.027907622957201728,,
+981.0,-0.0412080929741343,,
+982.0,-0.046503260915295996,,
+983.0,-0.04723820549713542,,
+984.0,-0.03157820798625366,,
+985.0,-0.023324307839101,,
+986.0,-0.026872132320965303,,
+987.0,-0.024451819412554254,,
+988.0,-0.037331487267477925,,
+989.0,-0.04512328301448543,,
+990.0,-0.05289967055961187,,
+991.0,-0.0348025329696422,,
+992.0,-0.03764363288744965,,
+993.0,-0.04289769798043297,,
+994.0,-0.06102964972794611,,
+995.0,-0.04985405776396501,,
+996.0,-0.05113818686947491,,
+997.0,-0.05333230629526842,,
+998.0,-0.05764741987070776,,
+999.0,-0.06296966061314357,,
+1000.0,-0.051918161140285246,,
+1001.0,-0.04740454653872961,,
+1002.0,-0.04309572150299923,,
+1003.0,-0.05375803891625841,,
+1004.0,-0.06177759797034721,,
+1005.0,-0.051765218433819093,,
+1006.0,-0.04606629802139439,,
+1007.0,-0.06038643678220712,,
+1008.0,-0.07034296152212072,,
+1009.0,-0.062335934765285206,,
+1010.0,-0.0568492274858734,,
+1011.0,-0.05112327755946833,,
+1012.0,-0.07996839453657811,,
+1013.0,-0.06328751465504379,,
+1014.0,-0.06817568010701436,,
+1015.0,-0.07201471697028117,,
+1016.0,-0.08320399906925458,,
+1017.0,-0.07028537193342954,,
+1018.0,-0.07441696541476084,,
+1019.0,-0.06399119722074742,,
+1020.0,-0.059922304036077456,,
+1021.0,-0.07309103649265625,,
+1022.0,-0.06816787738190833,,
+1023.0,-0.08450062118854795,,
+1024.0,-0.09083381696060044,,
+1025.0,-0.0880081992656434,,
+1026.0,-0.07573133416040934,,
+1027.0,-0.0632321863636287,,
+1028.0,-0.0820196003824547,,
+1029.0,-0.09518938268867405,,
+1030.0,-0.08503278266922987,,
+1031.0,-0.07851490965886887,,
+1032.0,-0.08047745302959708,,
+1033.0,-0.08930788878415141,,
+1034.0,-0.09955989781106345,,
+1035.0,-0.08361755856663544,,
+1036.0,-0.0743054413854094,,
+1037.0,-0.10347374682872168,,
+1038.0,-0.09700573079628683,,
+1039.0,-0.0947874599373133,,
+1040.0,-0.08600609301529616,,
+1041.0,-0.0948735196311512,,
+1042.0,-0.10361745001627787,,
+1043.0,-0.10508158837617021,,
+1044.0,-0.11047896092343024,,
+1045.0,-0.09931816919400038,,
+1046.0,-0.09347196571056982,,
+1047.0,-0.0926747677752715,,
+1048.0,-0.10071210483635351,,
+1049.0,-0.09692629965505573,,
+1050.0,-0.09333633618160864,,
+1051.0,-0.10741476118333981,,
+1052.0,-0.10384463235548536,,
+1053.0,-0.09921925541156895,,
+1054.0,-0.10788531909593502,,
+1055.0,-0.10307946979176918,,
+1056.0,-0.10294138008146936,,
+1057.0,-0.08980775162579002,,
+1058.0,-0.12253586472761091,,
+1059.0,-0.12327790229702762,,
+1060.0,-0.11391530942633343,,
+1061.0,-0.10453791716015015,,
+1062.0,-0.08867095936769598,,
+1063.0,-0.10571907016615922,,
+1064.0,-0.1286500145501579,,
+1065.0,-0.1299685943419382,,
+1066.0,-0.12627285296589408,,
+1067.0,-0.11964203871702495,,
+1068.0,-0.12016052430333657,,
+1069.0,-0.11113716062967516,,
+1070.0,-0.1252870410865392,,
+1071.0,-0.11825632723830193,,
+1072.0,-0.11139615995915841,,
+1073.0,-0.11060454564175481,,
+1074.0,-0.11330225067041955,,
+1075.0,-0.12693824332742354,,
+1076.0,-0.1175812079183669,,
+1077.0,-0.1185471089877077,,
+1078.0,-0.13002420456824204,,
+1079.0,-0.13438304475893004,,
+1080.0,-0.13058035430110193,,
+1081.0,-0.12948862017602591,,
+1082.0,-0.12164139036729749,,
+1083.0,-0.12937088379213035,,
+1084.0,-0.1335528840140232,,
+1085.0,-0.13034876967326747,,
+1086.0,-0.12354294596125692,,
+1087.0,-0.1253726571303404,,
+1088.0,-0.14082240676787094,,
+1089.0,-0.1344398760428156,,
+1090.0,-0.1432861653463302,,
+1091.0,-0.1346967908325314,,
+1092.0,-0.1362847457968397,,
+1093.0,-0.1394677799556887,,
+1094.0,-0.148367293905054,,
+1095.0,-0.1487093468930878,,
+1096.0,-0.14442240884743107,,
+1097.0,-0.13888718285719026,,
+1098.0,-0.14750858952191415,,
+1099.0,-0.13081819196914868,,
+1100.0,-0.13596473634211126,,
+1101.0,-0.1463496366586825,,
+1102.0,-0.13739403502653236,,
+1103.0,-0.14955704438610828,,
+1104.0,-0.13988138083231627,,
+1105.0,-0.13944534014629806,,
+1106.0,-0.13389923638913004,,
+1107.0,-0.15787644314247062,,
+1108.0,-0.14996339209999876,,
+1109.0,-0.16499062242048224,,
+1110.0,-0.1587377492935116,,
+1111.0,-0.15277472522365665,,
+1112.0,-0.14429629099955932,,
+1113.0,-0.13689587949834436,,
+1114.0,-0.15478942566893084,,
+1115.0,-0.15326195327783898,,
+1116.0,-0.1435794842818039,,
+1117.0,-0.13578029487732346,,
+1118.0,-0.14490030532346987,,
+1119.0,-0.17568681276167064,,
+1120.0,-0.17886408038567003,,
+1121.0,-0.1630622769397072,,
+1122.0,-0.15616064763928073,,
+1123.0,-0.1525695944571437,,
+1124.0,-0.13951962955502273,,
+1125.0,-0.15764008745951186,,
+1126.0,-0.1702001070899195,,
+1127.0,-0.15654408587733482,,
+1128.0,-0.14633440416705445,,
+1129.0,-0.14154759654216198,,
+1130.0,-0.13948518870679605,,
+1131.0,-0.16385977753656134,,
+1132.0,-0.14490356088511014,,
+1133.0,-0.15116278955527251,,
+1134.0,-0.15782110167239738,,
+1135.0,-0.15991668380313406,,
+1136.0,-0.15220485774096737,,
+1137.0,-0.14985791451447295,,
+1138.0,-0.16131415533678695,,
+1139.0,-0.14017327436814497,,
+1140.0,-0.13794804321680898,,
+1141.0,-0.14528077352265578,,
+1142.0,-0.13705798810004666,,
+1143.0,-0.14274865983084695,,
+1144.0,-0.14544837478757566,,
+1145.0,-0.16364725932176194,,
+1146.0,-0.1559263399880062,,
+1147.0,-0.15342859589784874,,
+1148.0,-0.15347401375555014,,
+1149.0,-0.13598803022260242,,
+1150.0,-0.13541965367316333,,
+1151.0,-0.15321845171978987,,
+1152.0,-0.1397934287515712,,
+1153.0,-0.1326341235469508,,
+1154.0,-0.15318123589501464,,
+1155.0,-0.164942694920307,,
+1156.0,-0.1570070856720185,,
+1157.0,-0.1511203699431296,,
+1158.0,-0.15671436819753248,,
+1159.0,-0.13087095060845266,,
+1160.0,-0.1366545840502953,,
+1161.0,-0.1418194394172989,,
+1162.0,-0.14739862226549327,,
+1163.0,-0.16033933619562513,,
+1164.0,-0.13605144099290367,,
+1165.0,-0.12786424852882172,,
+1166.0,-0.15348429596238944,,
+1167.0,-0.15956768804913812,,
+1168.0,-0.1501535064678139,,
+1169.0,-0.1380618083408236,,
+1170.0,-0.14902048894978037,,
+1171.0,-0.15874114923534632,,
+1172.0,-0.14238806805698,,
+1173.0,-0.13120540562078453,,
+1174.0,-0.13478544275971727,,
+1175.0,-0.1494968394709617,,
+1176.0,-0.1582663977272003,,
+1177.0,-0.14880751027447792,,
+1178.0,-0.14520189497398972,,
+1179.0,-0.14053279871547808,,
+1180.0,-0.1430055739168723,,
+1181.0,-0.1359339146539562,,
+1182.0,-0.1255097432076835,,
+1183.0,-0.1537119242811369,,
+1184.0,-0.15990420354581314,,
+1185.0,-0.1440688157598613,,
+1186.0,-0.13998885187891164,,
+1187.0,-0.14392704265889567,,
+1188.0,-0.14228944365741958,,
+1189.0,-0.15321651161821048,,
+1190.0,-0.14968552073710617,,
+1191.0,-0.1416232847620602,,
+1192.0,-0.12707669769038477,,
+1193.0,-0.14263100080796898,,
+1194.0,-0.15123358043158008,,
+1195.0,-0.15682611799519464,,
+1196.0,-0.13316648881428694,,
+1197.0,-0.14681762196050663,,
+1198.0,-0.13289788114837053,,
+1199.0,-0.1491750068591613,,
+1200.0,-0.12336382086001185,,
+1201.0,-0.13201077008524909,,
+1202.0,-0.1545005328349358,,
+1203.0,-0.15802690570164923,,
+1204.0,-0.13971933766729006,,
+1205.0,-0.13367677874196682,,
+1206.0,-0.13843513605048985,,
+1207.0,-0.14763374742773339,,
+1208.0,-0.15211727095048033,,
+1209.0,-0.13869231252102265,,
+1210.0,-0.12606511848444413,,
+1211.0,-0.14631519950414784,,
+1212.0,-0.13662339384755473,,
+1213.0,-0.1316013793609816,,
+1214.0,-0.14295343012479478,,
+1215.0,-0.14717632880606013,,
+1216.0,-0.14564249555482967,,
+1217.0,-0.1375671232364506,,
+1218.0,-0.14452980300723617,,
+1219.0,-0.13744623471311224,,
+1220.0,-0.13590300047443993,,
+1221.0,-0.13838841139353963,,
+1222.0,-0.16182507465859697,,
+1223.0,-0.16227066074247398,,
+1224.0,-0.14822116773255845,,
+1225.0,-0.13967272641350004,,
+1226.0,-0.15685121939372104,,
+1227.0,-0.1409901380775258,,
+1228.0,-0.13739930986467863,,
+1229.0,-0.13469726228338308,,
+1230.0,-0.13779386161756113,,
+1231.0,-0.15687607457942399,,
+1232.0,-0.13110825795884962,,
+1233.0,-0.12387363247249095,,
+1234.0,-0.13103551555257775,,
+1235.0,-0.14399269362968203,,
+1236.0,-0.1442963201649361,,
+1237.0,-0.14448350613191607,,
+1238.0,-0.14303489412027748,,
+1239.0,-0.14149869092749068,,
+1240.0,-0.1356591008641317,,
+1241.0,-0.13650816161278057,,
+1242.0,-0.1258621279532468,,
+1243.0,-0.14085538066309855,,
+1244.0,-0.14559195479918907,,
+1245.0,-0.15512769324462106,,
+1246.0,-0.13563636279126712,,
+1247.0,-0.1288397604988578,,
+1248.0,-0.13946287654826195,,
+1249.0,-0.1287319069421855,,
+1250.0,-0.13348681995839717,,
+1251.0,-0.1346326808645104,,
+1252.0,-0.15110011034062065,,
+1253.0,-0.14447744797312145,,
+1254.0,-0.1513754134572176,,
+1255.0,-0.1520145724634192,,
+1256.0,-0.12484432475501128,,
+1257.0,-0.1217400432053295,,
+1258.0,-0.1331252261854865,,
+1259.0,-0.14469483453641852,,
+1260.0,-0.14710739117580252,,
+1261.0,-0.1327247691440392,,
+1262.0,-0.13749956339175862,,
+1263.0,-0.14587397566203864,,
+1264.0,-0.13348594629776667,,
+1265.0,-0.13403924733384143,,
+1266.0,-0.13397361929473828,,
+1267.0,-0.13624560987912648,,
+1268.0,-0.141809930857566,,
+1269.0,-0.1384806837438668,,
+1270.0,-0.14101715563636263,,
+1271.0,-0.15754847015901907,,
+1272.0,-0.133988350809493,,
+1273.0,-0.13870916724413984,,
+1274.0,-0.13893864571616454,,
+1275.0,-0.13919952797270874,,
+1276.0,-0.13210521561246136,,
+1277.0,-0.13025822497861883,,
+1278.0,-0.14018496181037232,,
+1279.0,-0.13636183703358062,,
+1280.0,-0.12564581709161082,,
+1281.0,-0.13946307555587234,,
+1282.0,-0.1500611278292352,,
+1283.0,-0.14892391848893904,,
+1284.0,-0.13659148702215962,,
+1285.0,-0.13858532658869605,,
+1286.0,-0.14634328642913363,,
+1287.0,-0.14728160693898484,,
+1288.0,-0.13098710766480615,,
+1289.0,-0.12764612626172678,,
+1290.0,-0.12889070684857673,,
+1291.0,-0.14042529350430488,,
+1292.0,-0.13506694817810638,,
+1293.0,-0.1241752641240601,,
+1294.0,-0.14448561424107664,,
+1295.0,-0.14538455909042236,,
+1296.0,-0.1406787939979015,,
+1297.0,-0.14286273104047842,,
+1298.0,-0.12745706096213727,,
+1299.0,-0.13252070420573858,,
+1300.0,-0.1289744584235919,,
+1301.0,-0.13424189584477997,,
+1302.0,-0.13756504094269317,,
+1303.0,-0.15025820546954227,,
+1304.0,-0.1472228986196389,,
+1305.0,-0.13915878634742862,,
+1306.0,-0.13623736859947444,,
+1307.0,-0.13397871417034635,,
+1308.0,-0.11642979802471087,,
+1309.0,-0.11962104659052786,,
+1310.0,-0.14172298822772378,,
+1311.0,-0.15480480042479927,,
+1312.0,-0.1373352056869659,,
+1313.0,-0.1307427231721836,,
+1314.0,-0.14976849508957502,,
+1315.0,-0.1376614437167034,,
+1316.0,-0.13947374831970505,,
+1317.0,-0.13719704313625902,,
+1318.0,-0.14077013245925585,,
+1319.0,-0.1459868171052947,,
+1320.0,-0.14354332749015652,,
+1321.0,-0.13691225004630825,,
+1322.0,-0.14068433701910354,,
+1323.0,-0.14515676901498686,,
+1324.0,-0.13535886003621878,,
+1325.0,-0.13740919025990062,,
+1326.0,-0.12490103305986988,,
+1327.0,-0.13114901857415262,,
+1328.0,-0.13116511675362874,,
+1329.0,-0.1458174530893097,,
+1330.0,-0.14226424165624696,,
+1331.0,-0.1326169460603377,,
+1332.0,-0.13140456888142138,,
+1333.0,-0.11786055566235687,,
+1334.0,-0.13190251944378506,,
+1335.0,-0.13843768883182284,,
+1336.0,-0.14246168657440883,,
+1337.0,-0.156550824560433,,
+1338.0,-0.1534425357906688,,
+1339.0,-0.14854129688905537,,
+1340.0,-0.12059566165272262,,
+1341.0,-0.12080679093252833,,
+1342.0,-0.13265447612755832,,
+1343.0,-0.1347403243681744,,
+1344.0,-0.13267267359092116,,
+1345.0,-0.13234857331553718,,
+1346.0,-0.13144171560477869,,
+1347.0,-0.14558417493828024,,
+1348.0,-0.14636382335272202,,
+1349.0,-0.13617217163385487,,
+1350.0,-0.14133053281982555,,
+1351.0,-0.15132569607234858,,
+1352.0,-0.14316475960143293,,
+1353.0,-0.13468611299750854,,
+1354.0,-0.12374465234324727,,
+1355.0,-0.137430910216767,,
+1356.0,-0.14494802058761636,,
+1357.0,-0.15501837836691124,,
+1358.0,-0.15670635772497388,,
+1359.0,-0.1457448388286653,,
+1360.0,-0.13371625819709188,,
+1361.0,-0.14060102237802408,,
+1362.0,-0.13834735366632156,,
+1363.0,-0.12543728275906219,,
+1364.0,-0.12138885108625042,,
+1365.0,-0.136963455302197,,
+1366.0,-0.13177154838875715,,
+1367.0,-0.13370018129268413,,
+1368.0,-0.13299329147167915,,
+1369.0,-0.14106431557322496,,
+1370.0,-0.14301297300598703,,
+1371.0,-0.14397357846348546,,
+1372.0,-0.1427518357471902,,
+1373.0,-0.13621393065043286,,
+1374.0,-0.13616005828873456,,
+1375.0,-0.12976099877888503,,
+1376.0,-0.13994461769472277,,
+1377.0,-0.13127402382191233,,
+1378.0,-0.13526943794204938,,
+1379.0,-0.15151327477301413,,
+1380.0,-0.1376727120277943,,
+1381.0,-0.1343910516356117,,
+1382.0,-0.1383443573536569,,
+1383.0,-0.13289638765374923,,
+1384.0,-0.14832476426999364,,
+1385.0,-0.14284688976502036,,
+1386.0,-0.14662209925796477,,
+1387.0,-0.13203055056892676,,
+1388.0,-0.12584159204659162,,
+1389.0,-0.1270223048123298,,
+1390.0,-0.1354081572730581,,
+1391.0,-0.15205585564213475,,
+1392.0,-0.14972288193771277,,
+1393.0,-0.14416509804439315,,
+1394.0,-0.13748299080478255,,
+1395.0,-0.13140795989846188,,
+1396.0,-0.13902164642199955,,
+1397.0,-0.1523677986700167,,
+1398.0,-0.1437441050531385,,
+1399.0,-0.14710574141902466,,
+1400.0,-0.14240254592208013,,
+1401.0,-0.14432201464013028,,
+1402.0,-0.12857380179474465,,
+1403.0,-0.13535086217334014,,
+1404.0,-0.1383363790544756,,
+1405.0,-0.14699617806197773,,
+1406.0,-0.1356281615496746,,
+1407.0,-0.12586503687086026,,
+1408.0,-0.1299334302080868,,
+1409.0,-0.1436858702042687,,
+1410.0,-0.13518784376020498,,
+1411.0,-0.138884420110712,,
+1412.0,-0.14012468662397692,,
+1413.0,-0.14386779924690618,,
+1414.0,-0.14442438433258653,,
+1415.0,-0.13482969098137731,,
+1416.0,-0.13378286173532317,,
+1417.0,-0.152037560220597,,
+1418.0,-0.14069674600204474,,
+1419.0,-0.1588974654103037,,
+1420.0,-0.13348963979695982,,
+1421.0,-0.1338657978946034,,
+1422.0,-0.13501013708561604,,
+1423.0,-0.13817811088197463,,
+1424.0,-0.13004788522359867,,
+1425.0,-0.1429877721511441,,
+1426.0,-0.1503544974745119,,
+1427.0,-0.1521986267536879,,
+1428.0,-0.15035884851666514,,
+1429.0,-0.13052742361263636,,
+1430.0,-0.12856618656902796,,
+1431.0,-0.12730830521774816,,
+1432.0,-0.12736124905378343,,
+1433.0,-0.15137736713439764,,
+1434.0,-0.15866250187217767,,
+1435.0,-0.14873916185669245,,
+1436.0,-0.13683616242742946,,
+1437.0,-0.14105669489331119,,
+1438.0,-0.14832218239725803,,
+1439.0,-0.13980023563658683,,
+1440.0,-0.11765565372528597,,
+1441.0,-0.1321587070068886,,
+1442.0,-0.1519124441386288,,
+1443.0,-0.15485175155931286,,
+1444.0,-0.14616752366758856,,
+1445.0,-0.143246652136666,,
+1446.0,-0.13325230444463543,,
+1447.0,-0.13314937518384085,,
+1448.0,-0.1300997875875387,,
+1449.0,-0.1441874159681955,,
+1450.0,-0.14558948825982299,,
+1451.0,-0.15062351933262885,,
+1452.0,-0.1415649458903001,,
+1453.0,-0.1497898442904222,,
+1454.0,-0.14603600936555994,,
+1455.0,-0.12938111386834983,,
+1456.0,-0.13524381541068609,,
+1457.0,-0.15451365298073227,,
+1458.0,-0.155517372585523,,
+1459.0,-0.14426805090354433,,
+1460.0,-0.12677559889422874,,
+1461.0,-0.12463320954494428,,
+1462.0,-0.1512546535573045,,
+1463.0,-0.14892153130534824,,
+1464.0,-0.13513682960681672,,
+1465.0,-0.13367040507814343,,
+1466.0,-0.14696464938452225,,
+1467.0,-0.15398145084768222,,
+1468.0,-0.13483736551122893,,
+1469.0,-0.14313162952958702,,
+1470.0,-0.14551024385154765,,
+1471.0,-0.15605077562249603,,
+1472.0,-0.14990621933279824,,
+1473.0,-0.137299153399284,,
+1474.0,-0.12866871912650568,,
+1475.0,-0.13283327121318855,,
+1476.0,-0.13144332954731164,,
+1477.0,-0.13296830929028225,,
+1478.0,-0.14933413345677993,,
+1479.0,-0.1536148325860598,,
+1480.0,-0.1393370243202363,,
+1481.0,-0.12151355715079193,,
+1482.0,-0.11856777840162147,,
+1483.0,-0.14733554081557632,,
+1484.0,-0.14829292478092837,,
+1485.0,-0.1469873576304459,,
+1486.0,-0.14782520635046925,,
+1487.0,-0.14444456958472296,,
+1488.0,-0.14626288148770872,,
+1489.0,-0.14071400356604258,,
+1490.0,-0.13955952443412967,,
+1491.0,-0.13517767047240614,,
+1492.0,-0.1297364629685216,,
+1493.0,-0.14847816883736265,,
+1494.0,-0.14960715332428043,,
+1495.0,-0.1584474566021732,,
+1496.0,-0.15667547290227457,,
+1497.0,-0.13856338336160068,,
+1498.0,-0.15081049357589027,,
+1499.0,-0.15253760714701636,,
+1500.0,-0.132040394145847,,
+1501.0,-0.1351998461838133,,
+1502.0,-0.15002574443464756,,
+1503.0,-0.13705876060316813,,
+1504.0,-0.12083405548391823,,
+1505.0,-0.1254819805411378,,
+1506.0,-0.13021908251527492,,
+1507.0,-0.13725595540296398,,
+1508.0,-0.14756752712984822,,
+1509.0,-0.13552191366421162,,
+1510.0,-0.1353190189696929,,
+1511.0,-0.1293261632813958,,
+1512.0,-0.11878003514925961,,
+1513.0,-0.11229534150368092,,
+1514.0,-0.11404822187318864,,
+1515.0,-0.1222045664197835,,
+1516.0,-0.13263413932727453,,
+1517.0,-0.13548843027620938,,
+1518.0,-0.11599209931418164,,
+1519.0,-0.12053864827177296,,
+1520.0,-0.11858119151679336,,
+1521.0,-0.1123481274548177,,
+1522.0,-0.12410830587590072,,
+1523.0,-0.11568593272319516,,
+1524.0,-0.11650129117620978,,
+1525.0,-0.12590891901629764,,
+1526.0,-0.11993746203184275,,
+1527.0,-0.10970368497826177,,
+1528.0,-0.10338056147693342,,
+1529.0,-0.10280355028383426,,
+1530.0,-0.09678856410351155,,
+1531.0,-0.10424279893582522,,
+1532.0,-0.09746671951017527,,
+1533.0,-0.08757936353621654,,
+1534.0,-0.10473507962806883,,
+1535.0,-0.11551819354274961,,
+1536.0,-0.10492045941987937,,
+1537.0,-0.09396759040049885,,
+1538.0,-0.10338523416767442,,
+1539.0,-0.0957096669176205,,
+1540.0,-0.0919088355844333,,
+1541.0,-0.11675207622878103,,
+1542.0,-0.10839067519413659,,
+1543.0,-0.08494564714666586,,
+1544.0,-0.08137816031445366,,
+1545.0,-0.08669189708311098,,
+1546.0,-0.08602727904511331,,
+1547.0,-0.08002271419799367,,
+1548.0,-0.09703613613036399,,
+1549.0,-0.09841993852287789,,
+1550.0,-0.09798959295153953,,
+1551.0,-0.10062999001489104,,
+1552.0,-0.0897606817646146,,
+1553.0,-0.07930359610772486,,
+1554.0,-0.0837726630544422,,
+1555.0,-0.09716845026397358,,
+1556.0,-0.08271434732351812,,
+1557.0,-0.074191399014496,,
+1558.0,-0.06737012666883979,,
+1559.0,-0.07118090269180533,,
+1560.0,-0.0834687145518953,,
+1561.0,-0.06483722159653649,,
+1562.0,-0.08095200844763228,,
+1563.0,-0.09440834532182585,,
+1564.0,-0.07364409624248003,,
+1565.0,-0.06979307420902359,,
+1566.0,-0.07797934546094565,,
+1567.0,-0.08239986471594296,,
+1568.0,-0.08308202123673336,,
+1569.0,-0.07247247304146276,,
+1570.0,-0.0808318976896727,,
+1571.0,-0.07564757900192731,,
+1572.0,-0.0639576424267907,,
+1573.0,-0.057501170640128496,,
+1574.0,-0.07387931617319987,,
+1575.0,-0.07748574534028885,,
+1576.0,-0.081652630762723,,
+1577.0,-0.07739081444449125,,
+1578.0,-0.05446341279169431,,
+1579.0,-0.054805997651501404,,
+1580.0,-0.05531593342398278,,
+1581.0,-0.055834513586388024,,
+1582.0,-0.06417136161742887,,
+1583.0,-0.07693232348030321,,
+1584.0,-0.07185236718392662,,
+1585.0,-0.06281073117841096,,
+1586.0,-0.05791674910181177,,
+1587.0,-0.0593143807322738,,
+1588.0,-0.06376278564440119,,
+1589.0,-0.06318608157567462,,
+1590.0,-0.07017746023603832,,
+1591.0,-0.06853979805772514,,
+1592.0,-0.04470576729345588,,
+1593.0,-0.04628958634888214,,
+1594.0,-0.06743598849338728,,
+1595.0,-0.06398257418414266,,
+1596.0,-0.06778482531889285,,
+1597.0,-0.06043786216354041,,
+1598.0,-0.06112600652991018,,
+1599.0,-0.04555069316309224,,
+1600.0,-0.037691226009572976,,
+1601.0,-0.05738617237389221,,
+1602.0,-0.06861932570150886,,
+1603.0,-0.06776761451461777,,
+1604.0,-0.05092969418176718,,
+1605.0,-0.045848856997494636,,
+1606.0,-0.061014441329332314,,
+1607.0,-0.06788017426570425,,
+1608.0,-0.05385495848103217,,
+1609.0,-0.03199426644403314,,
+1610.0,-0.052132051466269314,,
+1611.0,-0.056326186151889335,,
+1612.0,-0.05699710570704175,,
+1613.0,-0.057470390078342426,,
+1614.0,-0.04203495576193372,,
+1615.0,-0.0543692007533636,,
+1616.0,-0.05880410984379747,,
+1617.0,-0.05158151614083506,,
+1618.0,-0.03818914609551527,,
+1619.0,-0.037431141495254394,,
+1620.0,-0.041251598810114753,,
+1621.0,-0.04516575594084804,,
+1622.0,-0.05184222347749401,,
+1623.0,-0.0348087670500008,,
+1624.0,-0.055553008563442585,,
+1625.0,-0.04002177585096467,,
+1626.0,-0.06529356159330701,,
+1627.0,-0.06387252024829149,,
+1628.0,-0.04039838526519901,,
+1629.0,-0.03078802711725004,,
+1630.0,-0.03102782545985283,,
+1631.0,-0.04028435013270881,,
+1632.0,-0.035100622887032085,,
+1633.0,-0.043091657436922226,,
+1634.0,-0.03838509769118481,,
+1635.0,-0.04056416150377551,,
+1636.0,-0.04206861586674382,,
+1637.0,-0.03798315450507683,,
+1638.0,-0.05687493815644595,,
+1639.0,-0.049822185462014,,
+1640.0,-0.042451957458440326,,
+1641.0,-0.03500203013658165,,
+1642.0,-0.03197307963771712,,
+1643.0,-0.04119223998846344,,
+1644.0,-0.04436886827274833,,
+1645.0,-0.040748208197973756,,
+1646.0,-0.04150359376131396,,
+1647.0,-0.03917447168680033,,
+1648.0,-0.030173423798365295,,
+1649.0,-0.023458216657121778,,
+1650.0,-0.033853089851629825,,
+1651.0,-0.0396323434573187,,
+1652.0,-0.04540579247814813,,
+1653.0,-0.0387007935288497,,
+1654.0,-0.029249491001182015,,
+1655.0,-0.030871519843909123,,
+1656.0,-0.029350104594825233,,
+1657.0,-0.034742680401593784,,
+1658.0,-0.032107389238285045,,
+1659.0,-0.030899496864569276,,
+1660.0,-0.04279655942008631,,
+1661.0,-0.03136549986527015,,
+1662.0,-0.038232143218790426,,
+1663.0,-0.034027099784132986,,
+1664.0,-0.04563873691275644,,
+1665.0,-0.032254594998386565,,
+1666.0,-0.034840344613904506,,
+1667.0,-0.02776846643619546,,
+1668.0,-0.014286312493945186,,
+1669.0,-0.021263116411169847,,
+1670.0,-0.038160218081411124,,
+1671.0,-0.029949837774323473,,
+1672.0,-0.012492361409648378,,
+1673.0,-0.025212402780687704,,
+1674.0,-0.016431302186556973,,
+1675.0,-0.03322261080027644,,
+1676.0,-0.05010998498870434,,
+1677.0,-0.044186084026849315,,
+1678.0,-0.0435187220644373,,
+1679.0,-0.02348978450951389,,
+1680.0,-0.015499979176218925,,
+1681.0,-0.013627990384013078,,
+1682.0,-0.018763567366180123,,
+1683.0,-0.025685913765642887,,
+1684.0,-0.02460898637398623,,
+1685.0,-0.043572987679825204,,
+1686.0,-0.023702245684860124,,
+1687.0,-0.03927201209238618,,
+1688.0,-0.03514342158541073,,
+1689.0,-0.02547542097463218,,
+1690.0,-0.013273059121592379,,
+1691.0,-0.003960094950488102,,
+1692.0,-0.018454362906283883,,
+1693.0,-0.03721638756825296,,
+1694.0,-0.03932880687967932,,
+1695.0,-0.03156375650702037,,
+1696.0,-0.033611611258481666,,
+1697.0,-0.0338571878948879,,
+1698.0,-0.018893291631290055,,
+1699.0,-0.022951684350582813,,
+1700.0,-0.011011671100691345,,
+1701.0,-0.01251407954289352,,
+1702.0,-0.025856023917660842,,
+1703.0,-0.03555647717371713,,
+1704.0,-0.02063417178348459,,
+1705.0,-0.019756517136759744,,
+1706.0,-0.018020236439342252,,
+1707.0,-0.013139532942358922,,
+1708.0,-0.02593286676974893,,
+1709.0,-0.010658492398987196,,
+1710.0,-0.021076794695693568,,
+1711.0,-0.029392261974425793,,
+1712.0,-0.024046644851145604,,
+1713.0,-0.015456811576197715,,
+1714.0,-0.01882546213659575,,
+1715.0,-0.01558676854650276,,
+1716.0,-0.020981784239344492,,
+1717.0,-0.02374797525326544,,
+1718.0,-0.006978123206902165,,
+1719.0,-0.022733467864808343,,
+1720.0,-0.02158426013522341,,
+1721.0,-0.030502190387684536,,
+1722.0,-0.021539390209188713,,
+1723.0,-0.009625358749243418,,
+1724.0,-0.009304825045803877,,
+1725.0,-0.024984782545667272,,
+1726.0,-0.016976130168826487,,
+1727.0,-0.018625309653328426,,
+1728.0,-0.024377129004209408,,
+1729.0,-0.0075331258773436716,,
+1730.0,-0.022094694403775872,,
+1731.0,-0.017765242314553564,,
+1732.0,-0.014095606068946775,,
+1733.0,-0.027364842185966243,,
+1734.0,-0.033771827321811276,,
+1735.0,-0.026684432194756802,,
+1736.0,-0.01826548539309414,,
+1737.0,-0.023659370146933423,,
+1738.0,-0.007947127027072565,,
+1739.0,-0.01254518932801485,,
+1740.0,-0.00806952990735077,,
+1741.0,-0.01606749188441281,,
+1742.0,-0.0177324583828109,,
+1743.0,-0.02277205616862732,,
+1744.0,-0.01582670169778977,,
+1745.0,-0.016818496171631114,,
+1746.0,-0.01198325622499885,,
+1747.0,-0.013619858057334344,,
+1748.0,-0.014640517345627657,,
+1749.0,-0.01037074199667476,,
+1750.0,-0.016854749144841197,,
+1751.0,-0.02343523571609829,,
+1752.0,-0.011331420614744125,,
+1753.0,-0.009100632505980588,,
+1754.0,-0.013248753575070271,,
+1755.0,-0.0028065585727299336,,
+1756.0,-0.0031335151863931543,,
+1757.0,-0.025152900533165212,,
+1758.0,-0.01484145188614061,,
+1759.0,-0.030790068539181537,,
+1760.0,-0.02417645868893814,,
+1761.0,-0.012171410456474074,,
+1762.0,-0.009359288456072257,,
+1763.0,0.004002025250033903,,
+1764.0,-0.001386064717454616,,
+1765.0,-0.016899916551256222,,
+1766.0,-0.01816318886104895,,
+1767.0,-0.02406370556015114,,
+1768.0,-0.002924818206908597,,
+1769.0,0.0004643909790447154,,
+1770.0,-0.017779381076794554,,
+1771.0,-0.025528424104110936,,
+1772.0,-0.0074400809089603115,,
+1773.0,-0.01909561719023678,,
+1774.0,-0.021136920102713397,,
+1775.0,-0.023391512631245615,,
+1776.0,-0.006769218640343411,,
+1777.0,0.0011069378142902764,,
+1778.0,-0.004663446775130531,,
+1779.0,-0.011396380711905518,,
+1780.0,-0.006933070826888876,,
+1781.0,-0.011676284308366203,,
+1782.0,-0.012838200848215298,,
+1783.0,-0.018173112807513547,,
+1784.0,-0.015610745313381358,,
+1785.0,0.004656638572888561,,
+1786.0,-0.0018486590131572278,,
+1787.0,-0.0034175656266954846,,
+1788.0,-0.011302990582982009,,
+1789.0,-0.024511111873835034,,
+1790.0,-0.012784146174331656,,
+1791.0,-0.004050314109078634,,
+1792.0,-0.00968677247343619,,
+1793.0,-0.010906336731537625,,
+1794.0,-0.002589689114658178,,
+1795.0,0.0036644073000235977,,
+1796.0,0.008034526045834767,,
+1797.0,-0.01835359356387345,,
+1798.0,-0.019574850088461826,,
+1799.0,-0.018804686975570917,,

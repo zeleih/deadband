@@ -1,0 +1,48 @@
+{
+  "format": "deadband_hotstart_v1",
+  "dispatch_label": "h5d1",
+  "hour": 5,
+  "dispatch": 1,
+  "dispatch_json": "/Applications/openandes/demo/demo/deadband/results/trajectory_chain/h5_midpoint_v2/h5d1_midtraj_v2_dispatch.json",
+  "checkpoint_dir": "/Applications/openandes/demo/demo/deadband/results/trajectory_chain/checkpoints_v2/8ea88edb4c8f/end_h5d1",
+  "checkpoint_in": "",
+  "curve_file": "/Applications/openandes/demo/demo/deadband/cases/CurveInterp.csv",
+  "dyn_case": "/Applications/openandes/demo/demo/deadband/cases/IL200_dyn_db2.xlsx",
+  "stable_dyn_case": "/Applications/openandes/demo/demo/deadband/cases/IL200_dyn_db2_stable.xlsx",
+  "wind_prefixes": [
+    "WT_"
+  ],
+  "solar_prefixes": [
+    "PV_"
+  ],
+  "duration_seconds": 900,
+  "agc_interval": 4,
+  "end_dae_t": 899.0,
+  "param_signature": {
+    "format": "deadband_hotstart_v1",
+    "kp": 0.03,
+    "ki": 0.01,
+    "agc_interval": 4,
+    "init_mode": "first",
+    "dispatch_interval": 900,
+    "curve_file": "/Applications/openandes/demo/demo/deadband/cases/CurveInterp.csv",
+    "dyn_case": "/Applications/openandes/demo/demo/deadband/cases/IL200_dyn_db2.xlsx",
+    "stable_dyn_case": "/Applications/openandes/demo/demo/deadband/cases/IL200_dyn_db2_stable.xlsx",
+    "wind_prefixes": [
+      "WT_"
+    ],
+    "solar_prefixes": [
+      "PV_"
+    ],
+    "extra": {
+      "runner": "run_dispatch_hotstart",
+      "apply_governor_targets": true,
+      "dispatch_target_scope": "governor_only",
+      "governor_target_schedule": "midpoint_trajectory",
+      "midpoint_cold_start_from_target": true,
+      "dispatch_target_ramp_seconds": 0
+    }
+  },
+  "param_signature_path": "/Applications/openandes/demo/demo/deadband/results/trajectory_chain/checkpoints_v2/8ea88edb4c8f/param_signature.json",
+  "param_hash": "8ea88edb4c8f"
+}

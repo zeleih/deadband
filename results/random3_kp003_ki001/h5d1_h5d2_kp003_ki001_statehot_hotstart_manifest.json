@@ -1,0 +1,16 @@
+{
+  "first_dispatch_json": "/Applications/openandes/demo/demo/deadband/results/day96_agc4_kp0p05_ki0p0625_first/h5d1_dispatch.json",
+  "second_dispatch_json": "/Applications/openandes/demo/demo/deadband/results/day96_agc4_kp0p05_ki0p0625_first/h5d2_dispatch.json",
+  "kp": 0.03,
+  "ki": 0.01,
+  "agc_interval": 4,
+  "dispatch_interval": 900,
+  "init_mode": "first",
+  "resume_mode": "memory",
+  "apply_second_governor_targets": false,
+  "apply_second_dg_targets": false,
+  "snapshot_path": "",
+  "hot_csv": "/Applications/openandes/demo/demo/deadband/results/random3_kp003_ki001/h5d1_h5d2_kp003_ki001_statehot_hotstart_frequency.csv",
+  "summary_csv": "/Applications/openandes/demo/demo/deadband/results/random3_kp003_ki001/h5d1_h5d2_kp003_ki001_statehot_hotstart_summary.csv",
+  "plot_path": "/Applications/openandes/demo/demo/deadband/results/random3_kp003_ki001/h5d1_h5d2_kp003_ki001_statehot_hotstart_vs_cold.png"
+}

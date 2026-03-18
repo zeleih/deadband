@@ -1,0 +1,2 @@
+label,first_label,second_label,kp,ki,agc_interval,dispatch_interval,samples,t_end_s,min_hz,max_hz,final_hz,abs_mean_hz,ace_integral_end,ace_raw_end
+h13d1_h13d2_kp003_ki001_cont,h13d1,h13d2,0.03,0.01,4,900,1800,1799.0,-0.03219881612669173,0.04381604160390573,0.0019043328351964206,0.0097120172129881,19.44101886258307,-0.19458157892160616

@@ -1,0 +1,32 @@
+{
+  "dispatch_label": "h13d2",
+  "agc_interval": 4,
+  "kp": 0.05,
+  "ki": 0.0625,
+  "init_mode": "first",
+  "variants": [
+    {
+      "name": "current_off",
+      "ddn": 0.0,
+      "fdbd": 0.0,
+      "fdbdu": 0.017,
+      "note": "Current migrated case: ddn=0, asymmetric threshold."
+    },
+    {
+      "name": "asym_on",
+      "ddn": 1.0,
+      "fdbd": 0.0,
+      "fdbdu": 0.017,
+      "note": "Activate current asymmetric thresholding."
+    },
+    {
+      "name": "sym_on",
+      "ddn": 1.0,
+      "fdbd": -0.017,
+      "fdbdu": 0.017,
+      "note": "Activate symmetric deadband for comparison."
+    }
+  ],
+  "base_stable_case": "/Applications/openandes/demo/demo/deadband/cases/IL200_dyn_db2_stable.xlsx",
+  "curve_file": "/Applications/openandes/demo/demo/deadband/cases/CurveInterp.csv"
+}

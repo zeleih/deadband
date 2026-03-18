@@ -1,0 +1,2 @@
+label,first_label,second_label,kp,ki,agc_interval,dispatch_interval,samples,t_end_s,min_hz,max_hz,final_hz,abs_mean_hz,ace_integral_end,ace_raw_end
+h5d1_h5d2_default_continuous,h5d1,h5d2,0.05,0.0625,4,900,1800,1799.0,-0.022662980891337003,0.038131878148570664,-0.00923317007329505,0.007892594635355955,27.027748167548314,-1.6897536261110735

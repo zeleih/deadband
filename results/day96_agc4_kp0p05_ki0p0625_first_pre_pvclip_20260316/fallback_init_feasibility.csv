@@ -1,0 +1,18 @@
+label,dispatch_init,first_init,second_init
+h0d1,ok,TDS init failed exit_code=1,TDS init failed exit_code=1
+h1d2,ok,TDS init failed exit_code=1,TDS init failed exit_code=1
+h2d0,ok,TDS init failed exit_code=1,ok
+h2d1,ok,TDS init failed exit_code=1,ok
+h2d2,ok,TDS init failed exit_code=1,TDS init failed exit_code=1
+h3d3,ok,TDS init failed exit_code=1,ok
+h4d0,ok,TDS init failed exit_code=1,ok
+h5d0,ok,TDS init failed exit_code=1,ok
+h5d3,ok,TDS init failed exit_code=1,TDS init failed exit_code=1
+h6d0,ok,TDS init failed exit_code=1,TDS init failed exit_code=1
+h6d1,ok,TDS init failed exit_code=1,ok
+h6d2,ok,TDS init failed exit_code=1,ok
+h21d1,ok,TDS init failed exit_code=1,TDS init failed exit_code=1
+h21d2,ok,TDS init failed exit_code=1,TDS init failed exit_code=1
+h22d0,ok,TDS init failed exit_code=1,ok
+h23d0,ok,TDS init failed exit_code=1,ok
+h23d2,ok,TDS init failed exit_code=1,ok

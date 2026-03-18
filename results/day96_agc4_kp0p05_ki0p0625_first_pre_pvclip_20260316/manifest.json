@@ -1,0 +1,18 @@
+{
+  "hour_start": 0,
+  "hours": 24,
+  "dispatches_per_hour": 4,
+  "duration_seconds": 900,
+  "agc_interval": 4,
+  "kp": 0.05,
+  "ki": 0.0625,
+  "init_mode": "first",
+  "retry_init_mode": "dispatch",
+  "retry_early_fail_seconds": 10,
+  "opf_case": "/Applications/openandes/demo/demo/deadband/cases/IL200_opf2.xlsx",
+  "dyn_case": "/Applications/openandes/demo/demo/deadband/cases/IL200_dyn_db2.xlsx",
+  "stable_dyn_case": "/Applications/openandes/demo/demo/deadband/cases/IL200_dyn_db2_stable.xlsx",
+  "curve_file": "/Applications/openandes/demo/demo/deadband/cases/CurveInterp.csv",
+  "results_dir": "/Applications/openandes/demo/demo/deadband/results/day96_agc4_kp0p05_ki0p0625_first",
+  "jobs": 4
+}

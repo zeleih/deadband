@@ -1,0 +1,56 @@
+{
+  "first_dispatch_json": "/Applications/openandes/demo/demo/deadband/results/day96_agc4_kp0p05_ki0p0625_first/h5d1_dispatch.json",
+  "second_dispatch_json": "/Applications/openandes/demo/demo/deadband/results/day96_agc4_kp0p05_ki0p0625_first/h5d2_dispatch.json",
+  "results_dir": "/Applications/openandes/demo/demo/deadband/results/dispatch_target_effect/h5d1_h5d2_gov_only",
+  "summary_csv": "/Applications/openandes/demo/demo/deadband/results/dispatch_target_effect/h5d1_h5d2_gov_only/h5d1_h5d2_gov_only_dispatch_target_effect_summary.csv",
+  "merged_csv": "/Applications/openandes/demo/demo/deadband/results/dispatch_target_effect/h5d1_h5d2_gov_only/h5d1_h5d2_gov_only_dispatch_target_effect_all_series.csv",
+  "plot_path": "/Applications/openandes/demo/demo/deadband/results/dispatch_target_effect/h5d1_h5d2_gov_only/h5d1_h5d2_gov_only_dispatch_target_effect.png",
+  "snapshot_path": "/Applications/openandes/demo/demo/deadband/results/dispatch_target_effect/h5d1_h5d2_gov_only/h5d1_h5d2_gov_only_first_segment_snapshot.pkl",
+  "kp": 0.03,
+  "ki": 0.01,
+  "agc_interval": 4,
+  "dispatch_interval": 900,
+  "init_mode": "first",
+  "resume_mode": "snapshot",
+  "ramp_seconds": 300,
+  "transition_summary": {
+    "gov_target_count": 25,
+    "gov_target_delta_sum": -0.5497100907428284,
+    "gov_target_delta_abs_sum": 6.887564579172886,
+    "gov_target_delta_max_abs": 1.3789608462002323
+  },
+  "variants": [
+    {
+      "name": "carryover",
+      "label": "carry-over (bf=first, no target)",
+      "second_bf_source": "first",
+      "apply_governor_targets": false,
+      "ramp_seconds": 0,
+      "color": "#5b3f8c"
+    },
+    {
+      "name": "bf_only",
+      "label": "AGC redistribution only (bf=second)",
+      "second_bf_source": "second",
+      "apply_governor_targets": false,
+      "ramp_seconds": 0,
+      "color": "#1f7a8c"
+    },
+    {
+      "name": "gov_step",
+      "label": "gov target step",
+      "second_bf_source": "second",
+      "apply_governor_targets": true,
+      "ramp_seconds": 0,
+      "color": "#c05621"
+    },
+    {
+      "name": "gov_ramp",
+      "label": "gov target ramp (300s)",
+      "second_bf_source": "second",
+      "apply_governor_targets": true,
+      "ramp_seconds": 300,
+      "color": "#2f855a"
+    }
+  ]
+}
