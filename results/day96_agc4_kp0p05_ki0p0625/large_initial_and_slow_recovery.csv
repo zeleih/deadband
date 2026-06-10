@@ -1,6 +1,0 @@
-label,hour,dispatch,early_peak_hz,early_peak_t_s,settle_time_s,final_abs_hz,abs_mean_hz,max_abs_hz,freq_csv,early_rank,settle_rank,joint_rank_sum,joint_rank_prod
-h7d2,7,2,0.3012642933709886,2,152,0.0030469567951252,0.0127802936642555,0.3012642933709886,/Applications/openandes/demo/demo/deadband/results/day96_agc4_kp0p05_ki0p0625/h7d2_frequency.csv,2.0,2.0,4.0,4.0
-h8d2,8,2,0.2934231472092596,2,143,0.0022606994376772,0.0137562208886237,0.2934231472092596,/Applications/openandes/demo/demo/deadband/results/day96_agc4_kp0p05_ki0p0625/h8d2_frequency.csv,4.0,3.0,7.0,12.0
-h7d3,7,3,0.3392079473406628,1,67,0.022625840505317,0.0169315201425655,0.3392079473406628,/Applications/openandes/demo/demo/deadband/results/day96_agc4_kp0p05_ki0p0625/h7d3_frequency.csv,1.0,11.0,12.0,11.0
-h9d0,9,0,0.2568740888512777,6,73,0.0025546523440933,0.0123639333796405,0.2568740888512777,/Applications/openandes/demo/demo/deadband/results/day96_agc4_kp0p05_ki0p0625/h9d0_frequency.csv,8.0,10.0,18.0,80.0
-h15d0,15,0,0.2292879247435086,2,67,0.0111279763342153,0.0087634501410323,0.2292879247435086,/Applications/openandes/demo/demo/deadband/results/day96_agc4_kp0p05_ki0p0625/h15d0_frequency.csv,11.0,11.0,22.0,121.0

@@ -1,2 +1,0 @@
-same_time_grid,max_abs_diff_hz,mean_abs_diff_hz,rms_diff_hz,worst_time_s,worst_diff_hz,max_abs_diff_excl_900_hz,mean_abs_diff_excl_900_hz,rms_diff_excl_900_hz,max_abs_diff_tge905_hz,mean_abs_diff_tge905_hz,rms_diff_tge905_hz
-True,0.015710542052627,1.87485811081329e-05,0.00039408683313630206,900.0,0.015710542052627,0.0029937495571897,1.0026072230134636e-05,0.00013487656454209526,0.0016982113312248009,8.24975515541778e-06,6.75064445841785e-05

@@ -193,6 +193,7 @@ def save_checkpoint(
     ctx: dict[str, object],
     ace_integral: float,
     ace_raw: float,
+    agc_aw_state: dict[str, int] | None = None,
     manifest: dict[str, Any],
 ) -> dict[str, Path]:
     checkpoint_dir.mkdir(parents=True, exist_ok=True)
@@ -205,10 +206,16 @@ def save_checkpoint(
     trim_snapshot_timeseries(sa)
     save_ss(system_path, sa)
     np.savez(runtime_path, **minimal_runtime_context(ctx))
-    agc_path.write_text(json.dumps({
+    payload = {
         "ace_integral": float(ace_integral),
         "ace_raw": float(ace_raw),
-    }, indent=2))
+    }
+    if agc_aw_state is not None:
+        payload["freeze_active"] = int(agc_aw_state.get("freeze_active", 0))
+        payload["freeze_on_streak"] = int(agc_aw_state.get("freeze_on_streak", 0))
+        payload["freeze_off_streak"] = int(agc_aw_state.get("freeze_off_streak", 0))
+        payload["freeze_dir"] = int(agc_aw_state.get("freeze_dir", 0))
+    agc_path.write_text(json.dumps(payload, indent=2))
     manifest_path.write_text(json.dumps(manifest, indent=2))
 
     return {

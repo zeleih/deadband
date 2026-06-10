@@ -1,2 +1,0 @@
-label,cold_end_first_hz,cold_start_second_hz,cold_jump_hz,hot_end_first_hz,hot_start_second_hz,hot_jump_hz,hot_step_0_to_1_hz,hot_min_hz,hot_max_hz
-h5_kp003_ki001_dg_only,0.0401040131796381,0.0,-0.0401040131796381,0.04010401317963819,0.04010401317963819,0.0,0.11286915164484324,-0.02263317351660188,0.17581801905658612

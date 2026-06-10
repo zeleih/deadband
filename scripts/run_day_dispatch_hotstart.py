@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 import pandas as pd
@@ -48,15 +49,56 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--agc-interval", type=int, default=4)
     parser.add_argument("--kp", type=float, default=0.03)
     parser.add_argument("--ki", type=float, default=0.01)
+    parser.add_argument("--wind-pref-alpha", type=float, default=1.0)
+    parser.add_argument("--solar-pref-alpha", type=float, default=1.0)
+    parser.add_argument(
+        "--agc-allocation-mode",
+        choices=rdt.AGC_ALLOCATION_MODES,
+        default=rdt.AGC_ALLOCATION_HEADROOM,
+    )
+    parser.add_argument("--agc-gov-output-ramp-frac-pmax-per-min", type=float, default=0.0)
+    parser.add_argument("--agc-dg-output-ramp-frac-pmax-per-min", type=float, default=0.0)
+    parser.add_argument(
+        "--agc-anti-windup-mode",
+        choices=("off", "freeze_on_saturation"),
+        default="off",
+    )
+    parser.add_argument("--disable-der-agc", action="store_true")
+    parser.add_argument("--disable-pvd-agc", action="store_true")
+    parser.add_argument("--disable-esd-agc", action="store_true")
+    parser.add_argument("--traditional-governor-deadband-hz", type=float, default=None)
+    parser.add_argument("--traditional-governor-deadband-csv", type=Path, default=None)
+    parser.add_argument("--der-deadband-hz", type=float, default=None)
+    parser.add_argument("--der-base-ddn", type=float, default=None)
+    parser.add_argument("--pvd1-base-ddn", type=float, default=None)
+    parser.add_argument("--esd1-base-ddn", type=float, default=None)
+    parser.add_argument("--pvd1-tfdb", type=float, default=None)
+    parser.add_argument("--esd1-tfdb", type=float, default=None)
+    parser.add_argument("--target-storage-share", type=float, default=None)
+    parser.add_argument("--scale-esd1-ddn-with-storage", dest="scale_esd1_ddn_with_storage", action="store_true")
+    parser.add_argument("--no-scale-esd1-ddn-with-storage", dest="scale_esd1_ddn_with_storage", action="store_false")
     parser.add_argument("--dispatch-target-ramp-seconds", type=int, default=0)
     parser.add_argument(
         "--governor-target-schedule",
-        choices=("step", "boundary_ramp", "midpoint_trajectory"),
+        choices=("step", "boundary_ramp", "midpoint_trajectory", "ramp_limited_basepoint"),
         default="midpoint_trajectory",
+    )
+    parser.add_argument(
+        "--governor-basepoint-ramp-floor-frac-pmax-per-min",
+        type=float,
+        default=0.005,
+    )
+    parser.add_argument(
+        "--governor-basepoint-ramp-gap-factor",
+        type=float,
+        default=1.25,
     )
     parser.add_argument("--init-mode", choices=("dispatch", "first"), default="first")
     parser.add_argument("--wind-prefix", action="append", default=None)
     parser.add_argument("--solar-prefix", action="append", default=None)
+    parser.add_argument("--wind-deadband-hz", type=float, default=None)
+    parser.add_argument("--solar-deadband-hz", type=float, default=None)
+    parser.add_argument("--esd-deadband-hz", type=float, default=None)
     parser.add_argument("--apply-governor-targets", dest="apply_governor_targets", action="store_true")
     parser.add_argument("--no-apply-governor-targets", dest="apply_governor_targets", action="store_false")
     parser.add_argument(
@@ -73,7 +115,14 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--start-checkpoint", type=Path, default=None,
                         help="Optional checkpoint to use for the first dispatch in the requested sequence.")
-    parser.set_defaults(apply_governor_targets=False, apply_dg_targets=False)
+    parser.add_argument("--save-plot", dest="save_plot", action="store_true")
+    parser.add_argument("--no-save-plot", dest="save_plot", action="store_false")
+    parser.set_defaults(
+        apply_governor_targets=False,
+        apply_dg_targets=False,
+        scale_esd1_ddn_with_storage=False,
+        save_plot=True,
+    )
     return parser.parse_args()
 
 
@@ -96,9 +145,11 @@ def main() -> None:
     tasks = enumerate_dispatches(args.hour_start, args.hours, args.dispatches_per_hour)
     previous_checkpoint = args.start_checkpoint
     rows: list[dict[str, object]] = []
+    total_tasks = len(tasks)
 
     for pos, (hour, dispatch) in enumerate(tasks):
         label = f"h{hour}d{dispatch}"
+        print(f"[{pos + 1}/{total_tasks}] starting {label}", flush=True)
         dispatch_json = args.dispatch_dir / f"{label}_dispatch.json"
         if not dispatch_json.exists():
             raise RuntimeError(
@@ -128,10 +179,54 @@ def main() -> None:
             "--agc-interval", str(args.agc_interval),
             "--kp", str(args.kp),
             "--ki", str(args.ki),
+            "--wind-pref-alpha", str(args.wind_pref_alpha),
+            "--solar-pref-alpha", str(args.solar_pref_alpha),
+            "--agc-allocation-mode", args.agc_allocation_mode,
+            "--agc-gov-output-ramp-frac-pmax-per-min", str(args.agc_gov_output_ramp_frac_pmax_per_min),
+            "--agc-dg-output-ramp-frac-pmax-per-min", str(args.agc_dg_output_ramp_frac_pmax_per_min),
+            "--agc-anti-windup-mode", args.agc_anti_windup_mode,
             "--dispatch-target-ramp-seconds", str(args.dispatch_target_ramp_seconds),
             "--governor-target-schedule", args.governor_target_schedule,
+            "--governor-basepoint-ramp-floor-frac-pmax-per-min",
+            str(args.governor_basepoint_ramp_floor_frac_pmax_per_min),
+            "--governor-basepoint-ramp-gap-factor",
+            str(args.governor_basepoint_ramp_gap_factor),
             "--init-mode", args.init_mode,
         ]
+        if args.traditional_governor_deadband_hz is not None:
+            cmd.extend(["--traditional-governor-deadband-hz", str(args.traditional_governor_deadband_hz)])
+        if args.traditional_governor_deadband_csv is not None:
+            cmd.extend(["--traditional-governor-deadband-csv", str(args.traditional_governor_deadband_csv)])
+        if args.der_deadband_hz is not None:
+            cmd.extend(["--der-deadband-hz", str(args.der_deadband_hz)])
+        if args.wind_deadband_hz is not None:
+            cmd.extend(["--wind-deadband-hz", str(args.wind_deadband_hz)])
+        if args.solar_deadband_hz is not None:
+            cmd.extend(["--solar-deadband-hz", str(args.solar_deadband_hz)])
+        if args.esd_deadband_hz is not None:
+            cmd.extend(["--esd-deadband-hz", str(args.esd_deadband_hz)])
+        if args.der_base_ddn is not None:
+            cmd.extend(["--der-base-ddn", str(args.der_base_ddn)])
+        if args.pvd1_base_ddn is not None:
+            cmd.extend(["--pvd1-base-ddn", str(args.pvd1_base_ddn)])
+        if args.esd1_base_ddn is not None:
+            cmd.extend(["--esd1-base-ddn", str(args.esd1_base_ddn)])
+        if args.pvd1_tfdb is not None:
+            cmd.extend(["--pvd1-tfdb", str(args.pvd1_tfdb)])
+        if args.esd1_tfdb is not None:
+            cmd.extend(["--esd1-tfdb", str(args.esd1_tfdb)])
+        if args.target_storage_share is not None:
+            cmd.extend(["--target-storage-share", str(args.target_storage_share)])
+        if args.scale_esd1_ddn_with_storage:
+            cmd.append("--scale-esd1-ddn-with-storage")
+        else:
+            cmd.append("--no-scale-esd1-ddn-with-storage")
+        if args.disable_der_agc:
+            cmd.append("--disable-der-agc")
+        if args.disable_pvd_agc:
+            cmd.append("--disable-pvd-agc")
+        if args.disable_esd_agc:
+            cmd.append("--disable-esd-agc")
         if next_dispatch_json is not None:
             cmd.extend(["--next-dispatch-json", str(next_dispatch_json)])
         for prefix in wind_prefixes:
@@ -144,6 +239,11 @@ def main() -> None:
             cmd.append("--apply-governor-targets")
         else:
             cmd.append("--no-apply-governor-targets")
+        if args.save_plot:
+            cmd.append("--save-plot")
+        else:
+            cmd.append("--no-save-plot")
+        step_start = time.perf_counter()
         completed = subprocess.run(
             cmd,
             capture_output=True,
@@ -155,9 +255,16 @@ def main() -> None:
                 f"stdout:\n{completed.stdout}\n"
                 f"stderr:\n{completed.stderr}"
             )
+        elapsed_s = time.perf_counter() - step_start
         summary_csv = args.results_dir / f"{label}_summary.csv"
         row = pd.read_csv(summary_csv).iloc[0].to_dict()
+        row["elapsed_s"] = float(elapsed_s)
         rows.append(row)
+        print(
+            f"[{pos + 1}/{total_tasks}] finished {label} "
+            f"in {elapsed_s:.1f}s final_hz={row['final_hz']:.6f}",
+            flush=True,
+        )
 
         previous_checkpoint = hcp.checkpoint_dir(args.checkpoints_dir, signature, label)
 

@@ -194,8 +194,7 @@ def run_tds_trace(
     sa.PV.set(src="v0", idx=sa.PV.idx.v, attr="v", value=sa.Bus.get(src="v0", attr="v", idx=pv_bus))
     sa.Slack.set(src="a0", idx=sa.Slack.idx.v, attr="v", value=sa.Bus.get(src="a0", attr="v", idx=slack_bus))
 
-    stg_on_uid = np.where(np.array(dispatch_record.pg) > 1e-4)[0]
-    stg_on = np.array([1 if uid in stg_on_uid else 0 for uid in range(len(stg))])
+    stg_on = rdt.dispatch_online_mask(stg, dispatch_record)
     sn = sa.StaticGen.get(src="Sn", attr="v", idx=stg)
     bf = stg_on * sn / (stg_on * sn).sum()
 

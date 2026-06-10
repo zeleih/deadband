@@ -41,6 +41,8 @@ def compute_one(
     curve_file: str,
     opf_case: str,
     dispatch_interval: int,
+    wind_pref_alpha: float,
+    solar_pref_alpha: float,
 ) -> dict[str, object]:
     curve = rdt.load_curve(Path(curve_file))
     record = rdt.compute_dispatch(
@@ -49,6 +51,8 @@ def compute_one(
         curve=curve,
         opf_case=Path(opf_case),
         dispatch_interval=dispatch_interval,
+        wind_pref_alpha=wind_pref_alpha,
+        solar_pref_alpha=solar_pref_alpha,
     )
     return record.__dict__
 
@@ -62,6 +66,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--hours", type=int, default=24)
     parser.add_argument("--dispatches-per-hour", type=int, default=DEFAULT_DISPATCHES_PER_HOUR)
     parser.add_argument("--dispatch-interval", type=int, default=DEFAULT_DISPATCH_INTERVAL)
+    parser.add_argument("--wind-pref-alpha", type=float, default=1.0)
+    parser.add_argument("--solar-pref-alpha", type=float, default=1.0)
     parser.add_argument("--workers", type=int, default=1)
     parser.add_argument("--skip-existing", action="store_true")
     return parser.parse_args()
@@ -107,6 +113,8 @@ def main() -> None:
                 curve_file=str(args.curve_file),
                 opf_case=str(args.opf_case),
                 dispatch_interval=args.dispatch_interval,
+                wind_pref_alpha=args.wind_pref_alpha,
+                solar_pref_alpha=args.solar_pref_alpha,
             )
             record = rdt.DispatchRecord(**payload)
             path = rdt.write_dispatch_json(record, args.results_dir, label=record.label)
@@ -132,6 +140,8 @@ def main() -> None:
                     str(args.curve_file),
                     str(args.opf_case),
                     args.dispatch_interval,
+                    args.wind_pref_alpha,
+                    args.solar_pref_alpha,
                 ): (hour, dispatch)
                 for hour, dispatch in pending
             }

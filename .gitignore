@@ -1,4 +1,18 @@
-.DS_Store
+# local environment
+.venv/
+vendor/
 __pycache__/
 *.pyc
-.ipynb_checkpoints/
+
+# regenerated outputs (reference outputs are tracked explicitly under results/)
+results/dispatches_day96_regen/
+results/_equivalence_check/
+results/*/checkpoints/
+*.png.tmp
+
+# OS noise
+.DS_Store
+
+# regenerated figures (build with the plot scripts)
+paper/latex/figures/*.pdf
+paper/latex/figures/*.png
