@@ -95,13 +95,27 @@ $PY scripts/run_day_dispatch_hotstart.py \
   --checkpoints-dir results/phase1_baseline_full_day_tip100_alpha098_disable_pvd_agc_disable_esd_agc_kp0p1_ki0p002/checkpoints/base \
   --hour-start 0 --hours 24 --dispatches-per-hour 4 --dispatch-interval 900 \
   --dyn-case $DYN --stable-dyn-case $DYN --curve-file $CURVE \
-  $AGC_FLAGS $ALPHA_FLAGS $GOV_FLAGS \
+  $AGC_FLAGS $ALPHA_FLAGS $GOV_FLAGS --apply-governor-targets \
   --wind-deadband-hz 0.036 --solar-deadband-hz 0.036 --esd-deadband-hz 0.036
 ```
+
+`--apply-governor-targets` is required here: this runner defaults to *not*
+applying OPF basepoints to the governors, whereas the paper baseline (and the
+sweep/full-day runners in steps 4–5, which hard-code it) runs with governor
+targets applied. Verified by checkpoint-replaying the archived baseline:
+hour 12 replayed from `end_h11d3` is byte-identical to the archived
+`h12d*_frequency.csv` only with this flag set.
 
 Check against the reference: `frequency_distribution_stats.csv` must give
 mean|Δf| = 0.02409 Hz, share>36 mHz = 23.10 %, share>50 mHz = 2.87 %,
 max|Δf| = 0.09334 Hz (Table II baseline row).
+
+> Checkpoint-replay note: checkpoints embed a parameter signature that
+> includes the *resolved absolute paths* of the case/curve files and the
+> governor-target setting. Replaying a checkpoint produced elsewhere
+> therefore requires matching paths (or the `--allow-signature-mismatch`
+> escape hatch of `scripts/run_dispatch_hotstart.py`). Checkpoints you
+> generate locally in step 2 replay without any of this.
 
 ## 3. Hot-start equivalence validation (Paper §II-F, "machine precision")
 

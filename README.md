@@ -60,6 +60,15 @@ GitHub at the pinned commits, patches applied):
    environment matches the archived paper traces bit-for-bit:
    max |diff| = 0.0 for frequency deviation, all three droop aggregates,
    engaged-unit counts, and storage SOC over all 900 samples.
+4. **Multi-interval spot-check** (four independent re-runs, all bitwise
+   exact, max |diff| = 0.0):
+   - inertia-screen windows h7d3→h8d2 and h20d3→h21d0 (uniform + 36/25/15;
+     2 × 57,600 trace values each, byte-identical CSVs);
+   - ESD-only ablation point 15 mHz on windows h2d3→h3d0 and h15d1→h15d2
+     (all 18 window metrics identical to the archived ablation CSV);
+   - full-day **baseline replay**: hour 12 (h12d0–h12d3) resumed from the
+     archived `end_h11d3` checkpoint reproduces the archived per-second
+     frequency traces byte-for-byte, confirming the checkpoint chain.
 
 Cross-platform note: bitwise identity is expected on macOS/arm64 with the
 pinned versions. On a different OS/BLAS stack, floating-point differences at
