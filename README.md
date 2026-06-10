@@ -45,6 +45,27 @@ The smoke check regenerates the hour-0 OPF dispatches from `cases/` and
 compares them against `data/dispatches_day96/`; on the original environment
 the match is exact (max |diff| = 0.0).
 
+## Verified reproduction status
+
+The full reviewer path was executed on a clean machine state (fresh clone,
+fresh venv created by `env/setup_env.sh`, CURENT repositories cloned from
+GitHub at the pinned commits, patches applied):
+
+1. **Environment build** — `setup_env.sh` completes; patched PVD1/ESD1
+   deadband extensions (`fdbd`/`fdbdu`/`Tfdb`) present.
+2. **OPF dispatch determinism** — regenerated hour-0 dispatches match the
+   archived `data/dispatches_day96/` with max |diff| = 0.0 (pg, pd, vBus, obj).
+3. **Dynamic simulation determinism** — the hot-start window h11d2→h11d3
+   (uniform and 36/25/15 deadbands, nominal inertia) rerun in the fresh
+   environment matches the archived paper traces bit-for-bit:
+   max |diff| = 0.0 for frequency deviation, all three droop aggregates,
+   engaged-unit counts, and storage SOC over all 900 samples.
+
+Cross-platform note: bitwise identity is expected on macOS/arm64 with the
+pinned versions. On a different OS/BLAS stack, floating-point differences at
+machine-epsilon scale may appear; all paper-level statistics are insensitive
+to these.
+
 ## Environment
 
 | Component | Version |
@@ -52,7 +73,8 @@ the match is exact (max |diff| = 0.0).
 | Python | 3.12 (3.12.13 used for archived results) |
 | ANDES | [CURENT/andes](https://github.com/CURENT/andes) @ `eda5163c9` + `env/patches/andes-eda5163c9-deadband.patch` |
 | AMS (ltbams) | [CURENT/ams](https://github.com/CURENT/ams) @ `38325a1c` + `env/patches/ams-38325a1c-compat.patch` |
-| CVXPY / kvxopt | 1.6.5 / 1.3.3.1 |
+| CVXPY / kvxopt / PYPOWER | 1.6.5 / 1.3.3.1 / 5.1.19 |
+| Convex solvers (pinned) | clarabel 0.11.1, scs 3.2.11, osqp 1.1.1, highspy 1.14.0 |
 | NumPy / SciPy / pandas / matplotlib | 2.4.4 / 1.17.1 / 3.0.2 / 3.10.8 |
 
 The ANDES patch adds to PVD1/ESD1: a symmetric upper deadband (`fdbdu`), an

@@ -30,6 +30,36 @@ These values reproduce the run manifests stored under `results/*/`
 (`phase1_sweep_manifest.json`, `phase1_full_day_manifest.json`), which record
 the exact configuration of the paper runs.
 
+## Quick verification path (~15–25 min, recommended first)
+
+Before committing to the multi-hour full pipeline, the following three
+commands establish that the environment reproduces the paper's simulations
+end to end:
+
+```bash
+bash env/setup_env.sh && source .venv/bin/activate
+bash tools/smoke_check.sh        # patched models + OPF dispatch determinism
+# one real hot-start dynamic window, uniform vs. best, nominal inertia:
+python scripts/run_inertia_sensitivity_windows.py \
+  --dispatch-dir data/dispatches_day96 \
+  --results-dir results/_quick_verify \
+  --dyn-case $DYN --stable-dyn-case $DYN --curve-file $CURVE \
+  --inertia-multiplier 1.0 --window h11d2,h11d3 \
+  $AGC_FLAGS $ALPHA_FLAGS $GOV_FLAGS --dispatch-interval 900
+python - <<'EOF'
+import pandas as pd, numpy as np
+for case in ("uniform", "best"):
+    a = pd.read_csv(f"results/_quick_verify/H100_{case}_h11d2_h11d3_trace.csv")
+    b = pd.read_csv(f"results/inertia_multiscenario_screen_20260503/H100_{case}_h11d2_h11d3_trace.csv")
+    d = float(np.abs(a["freq_dev_hz"].to_numpy() - b["freq_dev_hz"].to_numpy()).max())
+    print(f"{case}: max |freq diff| vs archived reference = {d:.3e} Hz")
+EOF
+```
+
+Expected: machine-precision agreement (`~1e-16` Hz or exactly 0) on the same
+platform/pins; small numerical differences (sub-mHz) on a different OS/BLAS
+are possible and do not change any paper-level statistic.
+
 ## 0. Environment + smoke check
 
 ```bash
