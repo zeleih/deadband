@@ -123,7 +123,8 @@ python ../../../scripts/plot_minimal_model.py
 
 ## License and citation
 
-Code is provided for research reproducibility. Please cite the paper when
-using this package. ANDES and AMS are open-source projects of
-[CURENT LTB](https://github.com/CURENT); the Illinois 200-bus synthetic
-network is from Birchfield *et al.*, IEEE Trans. Power Syst., 2017.
+This package is released under **GPL-3.0** (see `LICENSE`): the patches in
+`env/patches/` are derivative works of ANDES and AMS, which are GPL-licensed
+open-source projects of [CURENT LTB](https://github.com/CURENT). Please cite
+the paper when using this package — see `CITATION.cff`. The Illinois 200-bus
+synthetic network is from Birchfield *et al.*, IEEE Trans. Power Syst., 2017.
